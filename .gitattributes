@@ -1,0 +1,6 @@
+*/appsBinaries/database/debian/sqlite filter=lfs diff=lfs merge=lfs -text
+*/appsBinaries/database/FreeBSD/sqlite filter=lfs diff=lfs merge=lfs -text
+*/appsBinaries/webserver/debian/sbin/nginx filter=lfs diff=lfs merge=lfs -text
+*/appsBinaries/webserver/FreeBSD/sbin/nginx filter=lfs diff=lfs merge=lfs -text
+*/osImages/* filter=lfs diff=lfs merge=lfs -text
+*/bitfiles/* filter=lfs diff=lfs merge=lfs -text
