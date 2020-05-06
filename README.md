@@ -11,8 +11,10 @@ FETT. These include:
 At the top level, each directory corresponds to a source for the
 binaries. These are currently:
 - `GFE` (binaries for unmodified processors)
-- `CHERI`
+- `SRI-Cambridge`
 - `Michigan`
+- `MIT`
+- `LMCO`
 
 Each of these each one should have the following subdirectories.
 - `osImages/`: Contains OS images
