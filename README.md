@@ -16,20 +16,26 @@ binaries. These are currently:
 - `MIT`
 - `LMCO`
 
-Each of these each one should have the following subdirectories.
+Each team will be providing binaries for the platforms that they
+support. These platforms are `qemu`, `fpga`, and the following AWS
+platform variants.
+- `firesim`
+- `connectal`
+- `awsteria`
 
-- `osImages/`: Contains subdirectories `firesim/`, `fpga/`, and
-  `qemu/`. Each of which contains OS images for its respective
-  platform. Images should be named `<os>.elf`, where `<os>` is
-  `debian`, `FreeBSD`, or `busybox`.
+Each directory at the top level should have the following subdirectories.
+
+- `osImages/`: Contains a subdirectory for each supported platform
+  containing OS images. Images should be named `<os>.elf`, where
+  `<os>` is `debian`, `FreeBSD`, or `busybox`.
   
 - `appsBinaries/`: Contains a directory for each target
   application. Within each application, there is a subdirectory for
   each supported platform which contains the application binaries.
 
-- `bitfiles/`: Contains subdirectories `firesim/` and `fpga/`, which
-  respectively contain bitfiles for AWS and local FPGA hosts. The
-  structure of each subdirectory depends on the platform.
+- `bitfiles/`: Contains subdirectories for each supported
+  platform. The structure of each subdirectory depends on the
+  platform.
 
   * The `fpga/` directory contains bitfiles
     `soc_<proc_type>_<target>.bit`, where `<proc_type>` is either
@@ -40,8 +46,6 @@ Each of these each one should have the following subdirectories.
     processor. This contains a file `agfi_id.json`, which has the AGFI
     pointing to the AFI. The directories `kmods/` and `sim/` contain
     other binary artifacts associated with the FireSim build.
-
-Binaries for more AWS platform variants will be added in the future.
 
 ## Guidelines for Storing Binaries
 
