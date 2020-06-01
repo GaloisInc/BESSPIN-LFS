@@ -9,3 +9,8 @@
 */appsBinaries/voting/FreeBSD/kfcgi filter=lfs diff=lfs merge=lfs -text
 */appsBinaries/voting/debian/bvrs filter=lfs diff=lfs merge=lfs -text
 */appsBinaries/voting/debian/kfcgi filter=lfs diff=lfs merge=lfs -text
+*.ko filter=lfs diff=lfs merge=lfs -text
+*.so.* filter=lfs diff=lfs merge=lfs -text
+GFE/bitfiles/firesim/*/sim/FireSim-f1 filter=lfs diff=lfs merge=lfs -text
+GFE/bitfiles/firesim/*/sim/switch0 filter=lfs diff=lfs merge=lfs -text
+
