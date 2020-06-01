@@ -4,6 +4,7 @@
 */appsBinaries/webserver/FreeBSD/sbin/nginx filter=lfs diff=lfs merge=lfs -text
 */osImages/*.elf filter=lfs diff=lfs merge=lfs -text
 */bitfiles/*.bit filter=lfs diff=lfs merge=lfs -text
+*/bitfiles/*.ltx filter=lfs diff=lfs merge=lfs -text
 */appsBinaries/voting/FreeBSD/bvrs filter=lfs diff=lfs merge=lfs -text
 */appsBinaries/voting/FreeBSD/kfcgi filter=lfs diff=lfs merge=lfs -text
 */appsBinaries/voting/debian/bvrs filter=lfs diff=lfs merge=lfs -text
