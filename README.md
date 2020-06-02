@@ -42,10 +42,41 @@ Each directory at the top level should have the following subdirectories.
     `bluespec` or `chisel` and `<target>` is `p1`, `p2`, or `p3`. Each
     bitfile has an associated probe file with extension `.ltx`.
 
-  * The `firesim/` directory contains a subdirectory for each
-    processor. This contains a file `agfi_id.json`, which has the AGFI
-    pointing to the AFI. The directories `kmods/` and `sim/` contain
-    other binary artifacts associated with the FireSim build.
+  * The directory for an AWS platform variant contains a subdirectory
+    for each processor. This contains a file `agfi_id.json`, which has
+    the AGFI pointing to the AFI. Any other binaries associated with
+    that processor should also be stored here. For example, building a
+    processor with FireSim produced several libraries and kernel
+    modules.
+
+To summarize what was described above, the directory structure should
+look something like this:
+
+```
+├── <team>
+│   ├── appsBinaries
+│   │   ├── database
+│   │   │   └── <os>
+│   │   │       └── sqlite
+│   │   ├── voting
+│   │   │   └── <os>
+│   │   │       ├── bvrs
+│   │   │       └── kfcgi
+│   │   └── webserver
+│   │       └── <os>
+│   │           └── sbin
+│   │               └── nginx
+│   ├── bitfiles
+│   │   ├── <pvAWS>
+│   │   │   └── <proc>_<target>
+│   │   │       └── agfi_id.json
+│   │   └── fpga
+│   │       ├── soc_<proc>_<target>.bit
+│   │       └── soc_<proc>_<target>.ltx
+└── └── osImages
+        └── <platform>
+            └── <os>.elf
+```
 
 ## Guidelines for Storing Binaries
 
