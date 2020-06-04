@@ -21,3 +21,7 @@ GFE/osImages/firesim/debian.elf filter=lfs diff=lfs merge=lfs -text
 GFE/bitfiles/firesim/chisel_p1/sim/FireSim-f1 filter=lfs diff=lfs merge=lfs -text
 GFE/bitfiles/firesim/chisel_p1/sim/switch0 filter=lfs diff=lfs merge=lfs -text
 Michigan/osImages/firesim/FreeRTOS.elf filter=lfs diff=lfs merge=lfs -text
+ssith_aws_fpga filter=lfs diff=lfs merge=lfs -text
+MIT/osImages/connectal/devicetree.dtb filter=lfs diff=lfs merge=lfs -text
+MIT/appsBinaries/enclaves/debian/ssith/pam-enclave.bin filter=lfs diff=lfs merge=lfs -text
+MIT/appsBinaries/enclaves/debian/lib/security/pam_enclave.so filter=lfs diff=lfs merge=lfs -text
