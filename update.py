@@ -5,7 +5,7 @@ import os, shutil
 from itertools import product
 
 systems = ["debian", "FreeBSD", "busybox"]
-testingPlatforms = ["fpga", "qemu"]
+testingPlatforms = ["fpga", "qemu", "firesim"]
 processors = ["chisel_p1", "chisel_p2", "bluespec_p2"]
 extensions = ["bit", "ltx"]
 
@@ -24,9 +24,9 @@ def imagePaths():
     for system, platform in product(systems, testingPlatforms):
         imageVar = f"FETT_GFE_{system.upper()}_{platform.upper()}"
         if imageVar not in os.environ:
-            print(f"Error: OS image for {system} on {platform} not in Nix environment.")
-            exit(1)
-        pairs.append((os.environ[imageVar], os.path.join('osImages', platform, system + '.elf')))
+            print(f"OS image for {system} on {platform} not in Nix environment.")
+        else:
+            pairs.append((os.environ[imageVar], os.path.join('osImages', platform, system + '.elf')))
     return pairs
 
 def copyFromNix(baseDir):
