@@ -1,1 +1,0 @@
-# Compiled FETT target applications
