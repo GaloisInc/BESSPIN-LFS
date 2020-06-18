@@ -25,3 +25,7 @@ ssith_aws_fpga filter=lfs diff=lfs merge=lfs -text
 MIT/osImages/connectal/devicetree.dtb filter=lfs diff=lfs merge=lfs -text
 MIT/appsBinaries/enclaves/debian/ssith/pam-enclave.bin filter=lfs diff=lfs merge=lfs -text
 MIT/appsBinaries/enclaves/debian/lib/security/pam_enclave.so filter=lfs diff=lfs merge=lfs -text
+Michigan/bitfiles/firesim/chisel_p1/sim/FireSim-f1 filter=lfs diff=lfs merge=lfs -text
+Michigan/bitfiles/firesim/chisel_p1/sim/switch0 filter=lfs diff=lfs merge=lfs -text
+Michigan/bitfiles/firesim/chisel_p1/sim/libdwarf.so.1 filter=lfs diff=lfs merge=lfs -text
+Michigan/bitfiles/firesim/chisel_p1/sim/libelf.so.1 filter=lfs diff=lfs merge=lfs -text
