@@ -29,6 +29,8 @@ Michigan/bitfiles/firesim/chisel_p1/sim/FireSim-f1 filter=lfs diff=lfs merge=lfs
 Michigan/bitfiles/firesim/chisel_p1/sim/switch0 filter=lfs diff=lfs merge=lfs -text
 Michigan/bitfiles/firesim/chisel_p1/sim/libdwarf.so.1 filter=lfs diff=lfs merge=lfs -text
 Michigan/bitfiles/firesim/chisel_p1/sim/libelf.so.1 filter=lfs diff=lfs merge=lfs -text
+SRI-Cambridge/osImages/common/devicetree.dtb filter=lfs diff=lfs merge=lfs -text
 GFE/bitfiles/connectal/bluespec_p2/kmods/pcieportal.ko filter=lfs diff=lfs merge=lfs -text
 GFE/bitfiles/connectal/bluespec_p2/kmods/portalmem.ko filter=lfs diff=lfs merge=lfs -text
 MIT/bitfiles/connectal/bluespec_p2/sim/ssith_aws_fpga filter=lfs diff=lfs merge=lfs -text
+GFE/bitfiles/connectal/bluespec_p2/sim/ssith_aws_fpga filter=lfs diff=lfs merge=lfs -text
