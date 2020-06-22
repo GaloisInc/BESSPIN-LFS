@@ -34,3 +34,4 @@ SRI-Cambridge/bitfiles/connectal/bluespec_p2/sim/ssith_aws_fpga filter=lfs diff=
 GFE/bitfiles/connectal/bluespec_p2/kmods/pcieportal.ko filter=lfs diff=lfs merge=lfs -text
 GFE/bitfiles/connectal/bluespec_p2/kmods/portalmem.ko filter=lfs diff=lfs merge=lfs -text
 MIT/bitfiles/connectal/bluespec_p2/sim/ssith_aws_fpga filter=lfs diff=lfs merge=lfs -text
+GFE/bitfiles/connectal/bluespec_p2/sim/ssith_aws_fpga filter=lfs diff=lfs merge=lfs -text
