@@ -18,6 +18,7 @@ GFE/bitfiles/firesim/*/sim/switch0 filter=lfs diff=lfs merge=lfs -text
 LMCO/bitfiles/firesim/*/sim/FireSim-f1 filter=lfs diff=lfs merge=lfs -text
 LMCO/bitfiles/firesim/*/sim/switch0 filter=lfs diff=lfs merge=lfs -text
 GFE/osImages/firesim/debian.elf filter=lfs diff=lfs merge=lfs -text
+GFE/osImages/firesim/FreeRTOS.elf filter=lfs diff=lfs merge=lfs -text
 GFE/bitfiles/firesim/chisel_p1/sim/FireSim-f1 filter=lfs diff=lfs merge=lfs -text
 GFE/bitfiles/firesim/chisel_p1/sim/switch0 filter=lfs diff=lfs merge=lfs -text
 Michigan/osImages/firesim/FreeRTOS.elf filter=lfs diff=lfs merge=lfs -text
