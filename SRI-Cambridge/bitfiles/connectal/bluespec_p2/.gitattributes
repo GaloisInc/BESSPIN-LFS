@@ -1,3 +1,0 @@
-kmods/pcieportal.ko filter=lfs diff=lfs merge=lfs -text
-kmods/portalmem.ko filter=lfs diff=lfs merge=lfs -text
-sim/ssith_aws_fpga filter=lfs diff=lfs merge=lfs -text
