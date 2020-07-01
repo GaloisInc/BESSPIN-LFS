@@ -29,7 +29,7 @@ def imagePaths():
         else:
             pairs.append((os.environ[elfVar], os.path.join('osImages', platform, system + '.elf')))
         if imageVar in os.environ:
-            pairs.append((os.environ[elfVar], os.path.join('osImages', platform, system + '.img.zst')))
+            pairs.append((os.environ[imageVar], os.path.join('osImages', platform, system + '.img.zst')))
     return pairs
 
 def copyFromNix(baseDir):
