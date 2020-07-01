@@ -22,11 +22,14 @@ def bitfilePaths():
 def imagePaths():
     pairs = []
     for system, platform in product(systems, testingPlatforms):
-        imageVar = f"FETT_GFE_{system.upper()}_{platform.upper()}"
-        if imageVar not in os.environ:
+        elfVar = f"FETT_GFE_{system.upper()}_{platform.upper()}"
+        imageVar = f"FETT_GFE_{system.upper()}_ROOTFS_{platform.upper()}"
+        if elfVar not in os.environ:
             print(f"OS image for {system} on {platform} not in Nix environment.")
         else:
-            pairs.append((os.environ[imageVar], os.path.join('osImages', platform, system + '.elf')))
+            pairs.append((os.environ[elfVar], os.path.join('osImages', platform, system + '.elf')))
+        if imageVar in os.environ:
+            pairs.append((os.environ[imageVar], os.path.join('osImages', platform, system + '.img.zst')))
     return pairs
 
 def copyFromNix(baseDir):
