@@ -47,3 +47,5 @@ SRI-Cambridge/bitfiles/connectal/bluespec_p2/ubuntu18.04_k5.3.0-1028-aws.bkup/si
 SRI-Cambridge/bitfiles/connectal/bluespec_p2/ubuntu18.04_k5.3.0-1028-aws.bkup/kmods/portalmem.ko filter=lfs diff=lfs merge=lfs -text
 SRI-Cambridge/bitfiles/connectal/bluespec_p2/ubuntu18.04_k5.3.0-1028-aws.bkup/kmods/pcieportal.ko filter=lfs diff=lfs merge=lfs -text
 GFE/osImages/connectal/devicetree.dtb filter=lfs diff=lfs merge=lfs -text
+GFE/osImages/connectal/freebsd.img.zst filter=lfs diff=lfs merge=lfs -text
+GFE/osImages/connectal/freebsd.elf filter=lfs diff=lfs merge=lfs -text
