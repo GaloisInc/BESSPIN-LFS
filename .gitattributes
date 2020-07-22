@@ -43,6 +43,7 @@ MIT/appsBinaries/enclaves/debian/enclaves/lib/security/pam_enclave.so filter=lfs
 MIT/appsBinaries/enclaves/debian/enclaves/ssith/aes-main filter=lfs diff=lfs merge=lfs -text
 MIT/appsBinaries/enclaves/debian/enclaves/ssith/aes-enclave.bin filter=lfs diff=lfs merge=lfs -text
 MIT/appsBinaries/enclaves/debian/enclaves/lib/riscv64-linux-gnu/security/pam_enclave.so filter=lfs diff=lfs merge=lfs -text
+MIT/bitfiles/connectal/bluespec_p2/sim/ssith_aws_fpga filter=lfs diff=lfs merge=lfs -text
 SRI-Cambridge/bitfiles/connectal/bluespec_p2/ubuntu18.04_k5.3.0-1028-aws.bkup/sim/ssith_aws_fpga filter=lfs diff=lfs merge=lfs -text
 SRI-Cambridge/bitfiles/connectal/bluespec_p2/ubuntu18.04_k5.3.0-1028-aws.bkup/kmods/portalmem.ko filter=lfs diff=lfs merge=lfs -text
 SRI-Cambridge/bitfiles/connectal/bluespec_p2/ubuntu18.04_k5.3.0-1028-aws.bkup/kmods/pcieportal.ko filter=lfs diff=lfs merge=lfs -text
