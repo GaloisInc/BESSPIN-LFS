@@ -5,7 +5,7 @@ import os, shutil
 from itertools import product
 
 systems = ["debian", "FreeBSD", "busybox"]
-testingPlatforms = ["fpga", "qemu", "firesim"]
+testingPlatforms = ["fpga", "qemu", "firesim", "connectal"]
 processors = ["chisel_p1", "chisel_p2", "bluespec_p2"]
 extensions = ["bit", "ltx"]
 
@@ -24,12 +24,18 @@ def imagePaths():
     for system, platform in product(systems, testingPlatforms):
         elfVar = f"FETT_GFE_{system.upper()}_{platform.upper()}"
         imageVar = f"FETT_GFE_{system.upper()}_ROOTFS_{platform.upper()}"
-        if elfVar not in os.environ:
-            print(f"OS image for {system} on {platform} not in Nix environment.")
+        # Ensure FreeBSD is named freebsd when connectal is the platform
+        if system.lower() == 'freebsd' and platform.lower() == 'connectal':
+            systemName = 'freebsd'
         else:
-            pairs.append((os.environ[elfVar], os.path.join('osImages', platform, system + '.elf')))
+            systemName = system
+
+        if elfVar not in os.environ:
+            print(f"OS image for {systemName} on {platform} not in Nix environment.")
+        else:
+            pairs.append((os.environ[elfVar], os.path.join('osImages', platform, systemName + '.elf')))
         if imageVar in os.environ:
-            pairs.append((os.environ[imageVar], os.path.join('osImages', platform, system + '.img.zst')))
+            pairs.append((os.environ[imageVar], os.path.join('osImages', platform, systemName + '.img.zst')))
     return pairs
 
 def copyFromNix(baseDir):
