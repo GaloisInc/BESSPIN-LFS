@@ -51,3 +51,4 @@ GFE/osImages/connectal/devicetree.dtb filter=lfs diff=lfs merge=lfs -text
 GFE/osImages/connectal/freebsd.img.zst filter=lfs diff=lfs merge=lfs -text
 GFE/osImages/connectal/freebsd.elf filter=lfs diff=lfs merge=lfs -text
 LMCO/osImages/firesim/FreeRTOS.elf filter=lfs diff=lfs merge=lfs -text
+SRI-Cambridge/bitfiles/vcu118/soc_bluespec_p2.bit filter=lfs diff=lfs merge=lfs -text
