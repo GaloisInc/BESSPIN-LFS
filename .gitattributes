@@ -55,3 +55,6 @@ SRI-Cambridge/bitfiles/vcu118/soc_bluespec_p2.bit filter=lfs diff=lfs merge=lfs 
 GFE/appsBinaries/cyberphys/gdb/FreeBSD/gdb-freebsd-riscv64-static filter=lfs diff=lfs merge=lfs -text
 GFE/appsBinaries/cyberphys/ota_update_server/debian/ota.elf filter=lfs diff=lfs merge=lfs -text
 GFE/appsBinaries/cyberphys/ota_update_server/FreeBSD/ota.elf filter=lfs diff=lfs merge=lfs -text
+GFE/appsBinaries/gdb/FreeBSD/gdb-freebsd-riscv64-static filter=lfs diff=lfs merge=lfs -text
+GFE/appsBinaries/ota-update-server/debian/ota.elf filter=lfs diff=lfs merge=lfs -text
+GFE/appsBinaries/ota-update-server/FreeBSD/ota.elf filter=lfs diff=lfs merge=lfs -text
