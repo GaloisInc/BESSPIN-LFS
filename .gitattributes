@@ -51,3 +51,11 @@ GFE/osImages/connectal/devicetree.dtb filter=lfs diff=lfs merge=lfs -text
 GFE/osImages/connectal/freebsd.img.zst filter=lfs diff=lfs merge=lfs -text
 GFE/osImages/connectal/freebsd.elf filter=lfs diff=lfs merge=lfs -text
 LMCO/osImages/firesim/FreeRTOS.elf filter=lfs diff=lfs merge=lfs -text
+SRI-Cambridge/bitfiles/vcu118/soc_bluespec_p2.bit filter=lfs diff=lfs merge=lfs -text
+GFE/appsBinaries/cyberphys/gdb/FreeBSD/gdb-freebsd-riscv64-static filter=lfs diff=lfs merge=lfs -text
+GFE/appsBinaries/cyberphys/ota_update_server/debian/ota.elf filter=lfs diff=lfs merge=lfs -text
+GFE/appsBinaries/cyberphys/ota_update_server/FreeBSD/ota.elf filter=lfs diff=lfs merge=lfs -text
+GFE/appsBinaries/gdb/FreeBSD/gdb-freebsd-riscv64-static filter=lfs diff=lfs merge=lfs -text
+GFE/appsBinaries/ota-update-server/debian/ota.elf filter=lfs diff=lfs merge=lfs -text
+GFE/appsBinaries/ota-update-server/FreeBSD/ota.elf filter=lfs diff=lfs merge=lfs -text
+GFE/appsBinaries/ota-update-server/FreeBSD/gdb-freebsd-riscv64-static filter=lfs diff=lfs merge=lfs -text
