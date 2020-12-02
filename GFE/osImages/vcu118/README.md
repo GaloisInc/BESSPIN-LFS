@@ -1,1 +1,3 @@
-# Local FPGA OS Images
+# Local VCU118 OS Images
+
+- Note that the FreeBSD binary (`FreeBSD.elf`) has a hardcoded placeholder string in `/etc/rc.conf`. The line is specified in [SSITH-FETT-Environment/nix/gfe/freebsd/freebsd-rootfs-image.nix](https://github.com/DARPA-SSITH-Demonstrators/SSITH-FETT-Environment/blob/develop/nix/gfe/freebsd/freebsd-rootfs-image.nix), and the string is -at the time of writing this document-: `"inet XXX.XXX.XXX.XXX/24"`. Please note that the replacement string has to be of the exact same length. Padding with empty spaces after the quotation `/24"` is necessary for *shorter* IPs.
