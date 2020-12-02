@@ -5,7 +5,7 @@ import os, shutil
 from itertools import product
 
 systems = ["debian", "FreeBSD", "busybox"]
-testingPlatforms = ["fpga", "qemu", "firesim", "connectal"]
+testingPlatforms = ["vcu118", "qemu", "firesim", "connectal"]
 processors = ["chisel_p1", "chisel_p2", "bluespec_p2"]
 extensions = ["bit", "ltx"]
 
@@ -16,7 +16,7 @@ def bitfilePaths():
         exit(1)
     bitfileDir = os.environ[bitfileVar]
     bitfiles = [ f"soc_{proc}.{ext}" for proc, ext in product(processors, extensions)]
-    return [(os.path.join(bitfileDir, path), os.path.join('bitfiles', 'fpga', path))
+    return [(os.path.join(bitfileDir, path), os.path.join('bitfiles', 'vcu118', path))
             for path in bitfiles]
 
 def imagePaths():
