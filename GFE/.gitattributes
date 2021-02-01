@@ -1,5 +1,0 @@
-osImages/fpga/FreeBSD.elf filter=lfs diff=lfs merge=lfs -text
-osImages/fpga/busybox.elf filter=lfs diff=lfs merge=lfs -text
-osImages/fpga/debian.elf filter=lfs diff=lfs merge=lfs -text
-osImages/qemu/FreeBSD.elf filter=lfs diff=lfs merge=lfs -text
-osImages/qemu/debian.elf filter=lfs diff=lfs merge=lfs -text
