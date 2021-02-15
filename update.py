@@ -6,7 +6,11 @@ from itertools import product
 
 systems = ["debian", "FreeBSD", "busybox"]
 testingPlatforms = ["vcu118", "qemu", "firesim", "connectal"]
-processors = ["chisel_p1", "chisel_p2", "bluespec_p2"]
+processors = [
+                "chisel_p1", "bluespec_p1", 
+                "chisel_p2", "chisel_p2_pcie", "bluespec_p2", "bluespec_p2_pcie",
+                "chisel_p3", "bluespec_p3"
+            ]
 extensions = ["bit", "ltx"]
 
 def bitfilePaths():
