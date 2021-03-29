@@ -1,7 +1,7 @@
 # SSITH Demonstrator Binaries
 
 This repository is meant to store binary artifacts associated with
-FETT. These include:
+BESSPIN. These include:
 - Application binaries
 - OS Images
 - Bitfiles
@@ -90,7 +90,7 @@ file. See the Git LFS documentation for more info.
 ## Copying from the Nix Store
 
 Some of the artifacts in this repository are built as Nix packages in
-the [FETT Nix
-Environment](https://github.com/DARPA-SSITH-Demonstrators/SSITH-FETT-Environment). To
+the [BESSPIN Nix
+Environment](https://github.com/GaloisInc/BESSPIN-Environment). To
 copy the latest versions of these files from the Nix store, start the
 Nix shell and run the script `update.py` from this directory.

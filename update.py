@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# This script will not work unless it is run with the FETT Nix shell.
+# This script will not work unless it is run with the BESSPIN Nix shell.
 
 import os, shutil
 from itertools import product
@@ -14,7 +14,7 @@ processors = [
 extensions = ["bit", "ltx"]
 
 def bitfilePaths():
-    bitfileVar = 'FETT_GFE_BITFILE_DIR'
+    bitfileVar = 'BESSPIN_GFE_BITFILE_DIR'
     if bitfileVar not in os.environ:
         print("Error: bitfile directory not in Nix environment.")
         exit(1)
@@ -26,8 +26,8 @@ def bitfilePaths():
 def imagePaths():
     pairs = []
     for system, platform in product(systems, testingPlatforms):
-        elfVar = f"FETT_GFE_{system.upper()}_{platform.upper()}"
-        imageVar = f"FETT_GFE_{system.upper()}_ROOTFS_{platform.upper()}"
+        elfVar = f"BESSPIN_GFE_{system.upper()}_{platform.upper()}"
+        imageVar = f"BESSPIN_GFE_{system.upper()}_ROOTFS_{platform.upper()}"
         # Ensure FreeBSD is named freebsd when connectal is the platform
         if system.lower() == 'freebsd' and platform.lower() == 'connectal':
             systemName = 'freebsd'
