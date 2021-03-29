@@ -19,6 +19,6 @@ MIT/appsBinaries/enclaves/debian/enclaves/ssith/aes-main filter=lfs diff=lfs mer
 SRI-Cambridge/bitfiles/connectal/bluespec_p2/ubuntu18.04_k5.3.0-1028-aws.bkup/sim/ssith_aws_fpga filter=lfs diff=lfs merge=lfs -text
 GFE/appsBinaries/ota-update-server/FreeBSD/gdb-freebsd-riscv64-static filter=lfs diff=lfs merge=lfs -text
 */appsBinaries/infotainment-server/*/infotainment_server filter=lfs diff=lfs merge=lfs -text
-LMCO/bitfiles/vcu118/design_1_bootrom.bit filter=lfs diff=lfs merge=lfs -text
-LMCO/bitfiles/vcu118/design_1_bootrom.ltx filter=lfs diff=lfs merge=lfs -text
+LMCO/bitfiles/vcu118/soc_chisel_p2.bit filter=lfs diff=lfs merge=lfs -text
+LMCO/bitfiles/vcu118/soc_chisel_p2.ltx filter=lfs diff=lfs merge=lfs -text
 LMCO/osImages/vcu118/debian.elf filter=lfs diff=lfs merge=lfs -text
