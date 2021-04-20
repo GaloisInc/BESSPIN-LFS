@@ -1,3 +1,4 @@
 *.cmd
 *.o
 Module.symvers
+private.log

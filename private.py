@@ -5,7 +5,7 @@ Utility to add/update/download the private resources that are not LFS tracked
 """
 
 import os, sys, subprocess, traceback 
-import logging, argparse, json
+import logging, argparse, json, hashlib
 
 PRIVATE_RESOURCES_PATH = "https://artifactory.galois.com/artifactory/besspin_generic-nix/lfs-private-resources"
 TEST_FILE = "test.json"
@@ -41,6 +41,23 @@ def transfer (direction, localPath, remotePath):
                 f"Failed to {direction} <{localPath}> {preposition} <{remotePath}>!"
             )
 
+def computeSha256 (filepath):
+    BLOCKSIZE = 65536
+    try:
+        fIn = open(filepath,"rb")
+        sha256 = hashlib.sha256()
+        while True:
+            chunk = fIn.read(BLOCKSIZE)
+            if (not chunk):
+                break
+            sha256.update(chunk)
+        sha256Val = sha256.hexdigest()
+    except:
+        traceback.print_exc()
+        error(f"Failed to compute sha256 for <{filepath}>.")
+    fIn.close()
+    return sha256Val
+
 class ApiKey:
     def __init__(self):
         self.goodApiKey = False
@@ -65,6 +82,7 @@ class ApiKey:
 
 class TrackData:
     def __init__(self, repoDir):
+        self.repoDir = repoDir
         self.jsonPath = os.path.join(repoDir,TRACKING_DATA)
         self.loadJson()
 
@@ -76,19 +94,19 @@ class TrackData:
             traceback.print_exc()
             error(f"Failed to load the tracking data from {self.jsonPath}")
 
-    def writeJson(self):
+    def updateData(self):
         try:
             with open(self.jsonPath,"w") as fJson:
-                json.dump(self._data, fJson)
+                fJson.write(json.dumps(self._data, indent=4, sort_keys=True))
         except:
             traceback.print_exc()
             error(f"Failed to write the tracking data to {self.jsonPath}")
 
-    def applySelections(self, selectFiles, new=False):
-        if (selectFiles):
+    def applySelections(self, select, new=False):
+        if (select):
             if (not new):
-                self.checkSelections(selectFiles)
-            self._selections = selectFiles
+                self.checkSelections(select)
+            self._selections = select
         else:
             self._selections = list(self._data.keys())
         logging.debug(f"Selected Files: [{','.join(self._selections)}].")
@@ -97,6 +115,34 @@ class TrackData:
         for file in selectedFiles:
             if (file not in self._data.keys()):
                 error(f"Unknown <{file}>. Please choose from [{','.join(list(self._data.keys()))}]")
+
+    def downloadSelections(self):
+        for file, info in self._data.items():
+            if (os.path.isfile(file)):
+                logging.info(f"<{file}> already exists.")
+                continue
+            absPath = os.path.join(self.repoDir,file)
+            logging.info(f"Downloading <{file}>...")
+            transfer ("download", absPath, file)
+            # Calculate hash and size
+            sha256 = computeSha256(absPath)
+            size = os.path.getsize(absPath)
+            # Check the values
+            if ((sha256 != info["sha256"]) or (size != info["size"])):
+                logging.warning (f"<{file}> mismatch! Fetched [sha256:{sha256}, size:{size}], but "
+                    f"data has [sha256:{info['sha256']}, size:{info['size']}].")
+            else:
+                logging.info(f"<{file}> match!")
+
+    def insertSelections(self):
+        for file in self._selections:
+            if (file in self._data.keys()):
+                error(f"<{file}> is already tracked. Please use [--update] instead.")
+            absPath = os.path.join(self.repoDir,file)
+            # Calculate hash and size
+            sha256 = computeSha256(absPath)
+            size = os.path.getsize(absPath)
+            self._data[file] = {"sha256" : sha256, "size" : size}
 
 def main(xArgs):
     repoDir = os.path.abspath(os.path.dirname(__file__))
@@ -117,8 +163,19 @@ def main(xArgs):
 
     # Initialize states
     apiKey = ApiKey()
-    track = TrackData(repoDir)
+    data = TrackData(repoDir)
 
+    # Execute the modes
+    if (xArgs.download):
+        apiKey.verify()
+        data.applySelections(xArgs.select, new=False)
+        data.downloadSelections()
+    elif (xArgs.insert):
+        if (not xArgs.select):
+            error("Cannot use [--insert] without [--select].")
+        data.applySelections(xArgs.select, new=True)
+        data.insertSelections()
+        data.updateData()
 
 
 if __name__ == "__main__":
@@ -129,11 +186,12 @@ if __name__ == "__main__":
     modeGroup.add_argument ('-d', '--download', help='Download the selected files.', action='store_true')
     modeGroup.add_argument ('-u', '--upload', help='Deploys the selected files.', action='store_true')
     modeGroup.add_argument ('-i', '--insert', help='Adds a file to the tracking.', action='store_true')
+    modeGroup.add_argument ('-c', '--update', help='Update the selected files info.', action='store_true')
     modeGroup.add_argument ('-r', '--remove', help='Removes a file from the tracking.', action='store_true')
 
     selectGroup = xArgParser.add_mutually_exclusive_group()
-    imagesGroup.add_argument ('-a', '--all', help='All tracked files. [default]', action='store_true')
-    imagesGroup.add_argument ('-s', '--selectFiles', help='Select files.', nargs="*")
+    selectGroup.add_argument ('-a', '--all', help='All tracked files. [default]', action='store_true')
+    selectGroup.add_argument ('-s', '--select', help='Select files.', nargs="*")
 
     xArgs = xArgParser.parse_args()
     main(xArgs)
