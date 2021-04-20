@@ -137,7 +137,6 @@ class TrackData:
 
     def uploadSelections(self):
         for file in self._selections:
-            info = self._data[file]
             absPath = os.path.join(self.repoDir,file)
             logging.info(f"Uploading <{absPath}>...")
             transfer ("upload", absPath, file)
@@ -152,6 +151,20 @@ class TrackData:
             sha256 = computeSha256(absPath)
             size = os.path.getsize(absPath)
             self._data[file] = {"sha256" : sha256, "size" : size}
+            logging.info(f"<{file}> inserted! [sha256:{sha256}, size:{size}]")
+
+    def updateSelections(self):
+        for file in self._selections:
+            info = self._data[file]
+            absPath = os.path.join(self.repoDir,file)
+            # Calculate hash and size
+            sha256 = computeSha256(absPath)
+            size = os.path.getsize(absPath)
+            self._data[file] = {"sha256" : sha256, "size" : size}
+            logging.info(f"<{file}> updated! "
+                f"\n\t\tOld: [sha256:{info['sha256']}, size:{info['size']}]"
+                f"\n\t\tNew: [sha256:{sha256}, size:{size}]")
+
 
 def main(xArgs):
     repoDir = os.path.abspath(os.path.dirname(__file__))
@@ -189,6 +202,10 @@ def main(xArgs):
         apiKey.verify()
         data.applySelections(xArgs.select, new=False)
         data.uploadSelections()
+    elif (xArgs.update):
+        data.applySelections(xArgs.select, new=False)
+        data.updateSelections()
+        data.updateData()
 
 
 if __name__ == "__main__":
