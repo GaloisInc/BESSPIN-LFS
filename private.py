@@ -102,19 +102,27 @@ class TrackData:
             traceback.print_exc()
             error(f"Failed to write the tracking data to {self.jsonPath}")
 
-    def applySelections(self, select, new=False):
+    def applySelections(self, select, new=False, isfile=False):
         if (select):
             if (not new):
-                self.checkSelections(select)
+                self.verifySelectionsExistInData(select)
+            if (isfile):
+                self.verifySelectionsAreFiles(select)
             self._selections = select
         else:
             self._selections = list(self._data.keys())
         logging.debug(f"Selected Files: [{','.join(self._selections)}].")
 
-    def checkSelections(self, selectedFiles):
+    def verifySelectionsExistInData(self, selectedFiles):
         for file in selectedFiles:
             if (file not in self._data.keys()):
                 error(f"Unknown <{file}>. Please choose from [{','.join(list(self._data.keys()))}]")
+
+    def verifySelectionsAreFiles(self, selectedFiles):
+        for file in selectedFiles:
+            absPath = os.path.join(self.repoDir,file)
+            if (not os.path.isfile(absPath)):
+                error(f"<{abspath}> not found!")
 
     def downloadSelections(self):
         for file in self._selections:
@@ -152,6 +160,31 @@ class TrackData:
             size = os.path.getsize(absPath)
             self._data[file] = {"sha256" : sha256, "size" : size}
             logging.info(f"<{file}> inserted! [sha256:{sha256}, size:{size}]")
+
+    def appendToGitIgnore(self):
+        for file in self._selections:
+            fIgnorePath = os.path.join(self.repoDir, os.path.dirname(file), ".gitignore")
+            try:
+                with open(fIgnorePath,"a") as fIgnore:
+                    fIgnore.write(f"{file}\n")
+            except:
+                traceback.print_exc()
+                error(f"Failed to append to gitignore for {file}.")
+
+    def removeFromGitIgnore(self):
+        for file in self._selections:
+            fIgnorePath = os.path.join(self.repoDir, os.path.dirname(file), ".gitignore")
+            try:
+                fIgnore = open(fIgnorePath,"r")
+                lines = fIgnore.read.splitlines()
+                fIgnore.close()
+                lines.remove(file)
+                fIgnore = open(fIgnorePath,"w")
+                fIgnore.write('\n'.join(lines))
+                fIgnore.close()
+            except:
+                traceback.print_exc()
+                error(f"Failed to remove {file} from gitignore.")
 
     def updateSelections(self):
         for file in self._selections:
@@ -197,28 +230,30 @@ def main(xArgs):
     # Execute the modes
     if (xArgs.download):
         apiKey.verify()
-        data.applySelections(xArgs.select, new=False)
+        data.applySelections(xArgs.select, new=False, isfile=False)
         data.downloadSelections()
     elif (xArgs.insert):
         if (not xArgs.select):
             error("Cannot use [--insert] without [--select].")
-        data.applySelections(xArgs.select, new=True)
+        data.applySelections(xArgs.select, new=True, isfile=True)
         data.insertSelections()
         data.updateData()
+        data.appendToGitIgnore()
     elif (xArgs.upload):
         apiKey.verify()
-        data.applySelections(xArgs.select, new=False)
+        data.applySelections(xArgs.select, new=False, isfile=True)
         data.uploadSelections()
     elif (xArgs.update):
-        data.applySelections(xArgs.select, new=False)
+        data.applySelections(xArgs.select, new=False, isfile=True)
         data.updateSelections()
         data.updateData()
     elif (xArgs.remove):
         if (not xArgs.select):
             error("Cannot use [--remove] without [--select]!")
-        data.applySelections(xArgs.select, new=False)
+        data.applySelections(xArgs.select, new=False, isfile=False)
         data.removeSelections()
         data.updateData()
+        data.removeFromGitIgnore()
 
 
 if __name__ == "__main__":
