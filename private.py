@@ -165,6 +165,13 @@ class TrackData:
                 f"\n\t\tOld: [sha256:{info['sha256']}, size:{info['size']}]"
                 f"\n\t\tNew: [sha256:{sha256}, size:{size}]")
 
+    def removeSelections(self):
+        for file in self._selections:
+            del self._data[file]
+            logging.info(f"<{file}> untracked!")
+        logging.warning("File are still in the artifactory. You have to delete them manually in order "
+            "to completely remove them.")
+
 
 def main(xArgs):
     repoDir = os.path.abspath(os.path.dirname(__file__))
@@ -205,6 +212,12 @@ def main(xArgs):
     elif (xArgs.update):
         data.applySelections(xArgs.select, new=False)
         data.updateSelections()
+        data.updateData()
+    elif (xArgs.remove):
+        if (not xArgs.select):
+            error("Cannot use [--remove] without [--select]!")
+        data.applySelections(xArgs.select, new=False)
+        data.removeSelections()
         data.updateData()
 
 
