@@ -19,7 +19,24 @@ API_KEY=<YOUR_API_KEY> ./private.py --download
 
 ### Update
 
-Please use `./private.py -h` for instructions on how to update or add a binary.
+Please see `./private.py -h` for instructions on how to update or add a file.
+
+To track a new file, please insert it to the database and upload:
+```bash
+./private.py --insert --select </relative/path/to/file>
+API_KEY=<YOUR_API_KEY> ./private.py --upload --select </relative/path/to/file>
+```
+
+To update a file:
+```bash
+./private.py --update --select </relative/path/to/file>
+API_KEY=<YOUR_API_KEY> ./private.py --upload --select </relative/path/to/file>
+```
+
+To remove a file, you need to remove it from the database, then delete it manually from the artifactory.
+```bash
+./private.py --remove --select </relative/path/to/file>
+```
 
 
 ## Directory Structure
