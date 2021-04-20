@@ -1,10 +1,26 @@
-# SSITH Demonstrator Binaries
+# BESSPIN Binaries
 
 This repository is meant to store binary artifacts associated with
 BESSPIN. These include:
 - Application binaries
 - OS Images
 - Bitfiles
+
+## Private Artifacts
+
+Some binaries are kept private and not disclosed to the public, and thus not LFS tracked by Git. However, instead of having no tracking whatsoever, and in order to ensure the compatibility with the tool's operation, and thus to preserve the directory structure (see [below](#directory-structure)), we implemented a naïve tracking using hashes and sizes (similar to LFS, but much simpler, and without storing the old binaries).
+
+### Download
+
+For Galois partners, if you were granted an access to the private artifactory, you can download the private binaries by running:
+```bash
+API_KEY=<YOUR_API_KEY> ./private.py --download
+```
+
+### Update
+
+Please use `./private.py -h` for instructions on how to update or add a binary.
+
 
 ## Directory Structure
 
