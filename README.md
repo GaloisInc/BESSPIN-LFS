@@ -93,4 +93,4 @@ Some of the artifacts in this repository are built as Nix packages in
 the [BESSPIN Nix
 Environment](https://github.com/GaloisInc/BESSPIN-Environment). To
 copy the latest versions of these files from the Nix store, start the
-Nix shell and run the script `update.py` from this directory.
+Nix shell and run the script `updateFromNix.py` from this directory.
