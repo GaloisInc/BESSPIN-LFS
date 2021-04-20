@@ -176,7 +176,7 @@ class TrackData:
             fIgnorePath = os.path.join(self.repoDir, os.path.dirname(file), ".gitignore")
             try:
                 fIgnore = open(fIgnorePath,"r")
-                lines = fIgnore.read.splitlines()
+                lines = fIgnore.read().splitlines()
                 fIgnore.close()
                 lines.remove(file)
                 fIgnore = open(fIgnorePath,"w")
