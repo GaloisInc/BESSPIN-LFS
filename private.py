@@ -117,10 +117,11 @@ class TrackData:
                 error(f"Unknown <{file}>. Please choose from [{','.join(list(self._data.keys()))}]")
 
     def downloadSelections(self):
-        for file, info in self._data.items():
+        for file in self._selections:
             if (os.path.isfile(file)):
                 logging.info(f"<{file}> already exists.")
                 continue
+            info = self._data[file]
             absPath = os.path.join(self.repoDir,file)
             logging.info(f"Downloading <{file}>...")
             transfer ("download", absPath, file)
@@ -133,6 +134,14 @@ class TrackData:
                     f"data has [sha256:{info['sha256']}, size:{info['size']}].")
             else:
                 logging.info(f"<{file}> match!")
+
+    def uploadSelections(self):
+        for file in self._selections:
+            info = self._data[file]
+            absPath = os.path.join(self.repoDir,file)
+            logging.info(f"Uploading <{absPath}>...")
+            transfer ("upload", absPath, file)
+            logging.info(f"<{file}> uploaded!")
 
     def insertSelections(self):
         for file in self._selections:
@@ -176,6 +185,10 @@ def main(xArgs):
         data.applySelections(xArgs.select, new=True)
         data.insertSelections()
         data.updateData()
+    elif (xArgs.upload):
+        apiKey.verify()
+        data.applySelections(xArgs.select, new=False)
+        data.uploadSelections()
 
 
 if __name__ == "__main__":
