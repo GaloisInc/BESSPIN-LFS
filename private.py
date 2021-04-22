@@ -126,11 +126,20 @@ class TrackData:
 
     def downloadSelections(self):
         for file in self._selections:
-            if (os.path.isfile(file)):
-                logging.info(f"<{file}> already exists.")
-                continue
             info = self._data[file]
             absPath = os.path.join(self.repoDir,file)
+            
+            # If file exists, does it need an update?
+            if (os.path.isfile(file)):
+                # Calculate hash and size
+                sha256Existing = computeSha256(absPath)
+                sizeExisting = os.path.getsize(absPath)
+                if ((sha256Existing != info["sha256"]) or (sizeExisting != info["size"])):
+                    logging.info(f"<{file}> already exists, but does not match the info. Will overwrite.")
+                else:
+                    logging.info(f"<{file}> already exists. Will skip.")
+                    continue
+
             logging.info(f"Downloading <{file}>...")
             transfer ("download", absPath, file)
             # Calculate hash and size
