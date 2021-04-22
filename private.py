@@ -206,9 +206,12 @@ class TrackData:
             absPath = os.path.join(self.repoDir,file)
             sha256, size, perm = computeHashSizePerm(absPath)
             self._data[file] = {"sha256" : sha256, "size" : size, "perm" : perm}
-            logging.info(f"<{file}> updated! "
-                f"\n\t\tOld: [sha256:{info['sha256']}, size:{info['size']}, perm:{info['perm']:o}]"
-                f"\n\t\tNew: [sha256:{sha256}, size:{size}], perm:{perm:o}]")
+            if ((sha256 != info["sha256"]) or (size != info["size"]) or (perm != info["perm"])):
+                logging.info(f"<{file}> updated! "
+                    f"\n\t\tOld: [sha256:{info['sha256']}, size:{info['size']}, perm:{info['perm']:o}]"
+                    f"\n\t\tNew: [sha256:{sha256}, size:{size}], perm:{perm:o}]")
+            else:
+                logging.info(f"<{file}> unmodified!")
 
     def removeSelections(self):
         for file in self._selections:
