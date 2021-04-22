@@ -174,7 +174,7 @@ class TrackData:
             fIgnorePath = os.path.join(self.repoDir, os.path.dirname(file), ".gitignore")
             try:
                 with open(fIgnorePath,"a") as fIgnore:
-                    fIgnore.write(f"{file}\n")
+                    fIgnore.write(f"{os.path.basename(file)}\n")
             except:
                 traceback.print_exc()
                 error(f"Failed to append to gitignore for {file}.")
@@ -186,7 +186,7 @@ class TrackData:
                 fIgnore = open(fIgnorePath,"r")
                 lines = fIgnore.read().splitlines()
                 fIgnore.close()
-                lines.remove(file)
+                lines.remove(os.path.basename(file))
                 fIgnore = open(fIgnorePath,"w")
                 fIgnore.write('\n'.join(lines))
                 fIgnore.close()
