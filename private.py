@@ -58,10 +58,11 @@ def computeSha256 (filepath):
     fIn.close()
     return sha256Val
 
-def computeHashAndSize (filepath):
+def computeHashSizePerm (filepath):
     sha256 = computeSha256(filepath)
     size = os.path.getsize(filepath)
-    return (sha256,size)
+    perm = os.stat(filepath)
+    return (sha256,size,perm)
 
 class ApiKey:
     def __init__(self):
@@ -136,7 +137,7 @@ class TrackData:
             
             # If file exists, does it need an update?
             if (os.path.isfile(file)):
-                sha256Existing, sizeExisting = computeHashAndSize(absPath)
+                sha256Existing, sizeExisting, permExisting = computeHashSizePerm(absPath)
                 if ((sha256Existing != info["sha256"]) or (sizeExisting != info["size"])):
                     logging.info(f"<{file}> already exists, but does not match the info. Will overwrite.")
                 else:
@@ -145,7 +146,7 @@ class TrackData:
 
             logging.info(f"Downloading <{file}>...")
             transfer ("download", absPath, file)
-            sha256, size = computeHashAndSize(absPath)
+            sha256, size, perm = computeHashSizePerm(absPath)
             # Check the values
             if ((sha256 != info["sha256"]) or (size != info["size"])):
                 logging.warning (f"<{file}> mismatch! Fetched [sha256:{sha256}, size:{size}], but "
@@ -165,7 +166,7 @@ class TrackData:
             if (file in self._data.keys()):
                 error(f"<{file}> is already tracked. Please use [--update] instead.")
             absPath = os.path.join(self.repoDir,file)
-            sha256, size = computeHashAndSize(absPath)
+            sha256, size, perm = computeHashSizePerm(absPath)
             self._data[file] = {"sha256" : sha256, "size" : size}
             logging.info(f"<{file}> inserted! [sha256:{sha256}, size:{size}]")
 
@@ -198,7 +199,7 @@ class TrackData:
         for file in self._selections:
             info = self._data[file]
             absPath = os.path.join(self.repoDir,file)
-            sha256, size = computeHashAndSize(absPath)
+            sha256, size, perm = computeHashSizePerm(absPath)
             self._data[file] = {"sha256" : sha256, "size" : size}
             logging.info(f"<{file}> updated! "
                 f"\n\t\tOld: [sha256:{info['sha256']}, size:{info['size']}]"
