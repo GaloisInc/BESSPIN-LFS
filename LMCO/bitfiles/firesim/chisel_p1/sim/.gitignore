@@ -1,4 +1,4 @@
-LMCO/bitfiles/firesim/chisel_p1/sim/libdwarf.so.1
-LMCO/bitfiles/firesim/chisel_p1/sim/switch0
-LMCO/bitfiles/firesim/chisel_p1/sim/libelf.so.1
-LMCO/bitfiles/firesim/chisel_p1/sim/FireSim-f1
+FireSim-f1
+libdwarf.so.1
+libelf.so.1
+switch0
