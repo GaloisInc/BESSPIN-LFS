@@ -59,8 +59,8 @@ def computeSha256 (filepath):
     return sha256Val
 
 def computeHashAndSize (filepath):
-    sha256 = computeSha256(absPath)
-    size = os.path.getsize(absPath)
+    sha256 = computeSha256(filepath)
+    size = os.path.getsize(filepath)
     return (sha256,size)
 
 class ApiKey:
