@@ -61,7 +61,7 @@ def computeSha256 (filepath):
 def computeHashSizePerm (filepath):
     sha256 = computeSha256(filepath)
     size = os.path.getsize(filepath)
-    perm = os.stat(filepath)
+    perm = os.stat(filepath).st_mode
     return (sha256,size,perm)
 
 class ApiKey:
@@ -140,6 +140,10 @@ class TrackData:
                 sha256Existing, sizeExisting, permExisting = computeHashSizePerm(absPath)
                 if ((sha256Existing != info["sha256"]) or (sizeExisting != info["size"])):
                     logging.info(f"<{file}> already exists, but does not match the info. Will overwrite.")
+                elif (permExisting != info["perm"]):
+                    logging.info(f"<{file}> already exists, but with the wrong permissions. Will fix.")
+                    os.chmod(absPath, info["perm"])
+                    continue
                 else:
                     logging.info(f"<{file}> already exists. Will skip.")
                     continue
@@ -153,6 +157,7 @@ class TrackData:
                     f"data has [sha256:{info['sha256']}, size:{info['size']}].")
             else:
                 logging.info(f"<{file}> match!")
+            os.chmod(absPath, info["perm"])
 
     def uploadSelections(self):
         for file in self._selections:
@@ -167,8 +172,8 @@ class TrackData:
                 error(f"<{file}> is already tracked. Please use [--update] instead.")
             absPath = os.path.join(self.repoDir,file)
             sha256, size, perm = computeHashSizePerm(absPath)
-            self._data[file] = {"sha256" : sha256, "size" : size}
-            logging.info(f"<{file}> inserted! [sha256:{sha256}, size:{size}]")
+            self._data[file] = {"sha256" : sha256, "size" : size, "perm" : perm}
+            logging.info(f"<{file}> inserted! [sha256:{sha256}, size:{size}, perm:{perm:o}]")
 
     def appendToGitIgnore(self):
         for file in self._selections:
@@ -200,10 +205,10 @@ class TrackData:
             info = self._data[file]
             absPath = os.path.join(self.repoDir,file)
             sha256, size, perm = computeHashSizePerm(absPath)
-            self._data[file] = {"sha256" : sha256, "size" : size}
+            self._data[file] = {"sha256" : sha256, "size" : size, "perm" : perm}
             logging.info(f"<{file}> updated! "
-                f"\n\t\tOld: [sha256:{info['sha256']}, size:{info['size']}]"
-                f"\n\t\tNew: [sha256:{sha256}, size:{size}]")
+                f"\n\t\tOld: [sha256:{info['sha256']}, size:{info['size']}, perm:{info['perm']:o}]"
+                f"\n\t\tNew: [sha256:{sha256}, size:{size}], perm:{perm:o}]")
 
     def removeSelections(self):
         for file in self._selections:
