@@ -1,173 +1,216 @@
 {
     "LMCO/README.md": {
+        "perm": 33188,
         "sha256": "3b924acc6c7c86d93ef36c8e15a115648405b957dc7e87c3c30d52efcf0f305c",
         "size": 341
     },
     "LMCO/bitfiles/README.md": {
+        "perm": 33188,
         "sha256": "dc3c94f0d4681a8403410c2abbec90f0dc95356adc6bf0b36be1a536c45c9ee6",
         "size": 1145
     },
     "LMCO/bitfiles/firesim/chisel_p1/agfi_id.json": {
+        "perm": 33188,
         "sha256": "b0b58a6e8a95eac070cd8428d36bb6a1fb960ede1da1f82a036e66774cac3f31",
         "size": 129
     },
     "LMCO/bitfiles/firesim/chisel_p1/kmods/nbd.ko": {
+        "perm": 33188,
         "sha256": "2b82256cfe307e3c41e7166e255cc70ad1a25522beb1747ff24468054c2eb1ca",
         "size": 565760
     },
     "LMCO/bitfiles/firesim/chisel_p1/kmods/xdma.ko": {
+        "perm": 33188,
         "sha256": "e27520cb6d886f420409c6965e8d49f821084bdc0c3f91f833b3307d4c44ea8f",
         "size": 2190408
     },
     "LMCO/bitfiles/firesim/chisel_p1/sim/FireSim-f1": {
+        "perm": 33261,
         "sha256": "aa7c2f31fbf03dd9a1c4695df9a16fd9365b01d02d7353d6a6ec23a7ea8ffdf0",
         "size": 7125192
     },
     "LMCO/bitfiles/firesim/chisel_p1/sim/libdwarf.so.1": {
+        "perm": 33261,
         "sha256": "8bd530d772b26067ddfe94ab8117da498690e1dde58a50b5aa3283879220681d",
         "size": 1205768
     },
     "LMCO/bitfiles/firesim/chisel_p1/sim/libelf.so.1": {
+        "perm": 33261,
         "sha256": "be8fcd8474d3679d3c8bc1f37e7ed45b2f68dd633ea247d7b083f699e10bf50e",
         "size": 1071416
     },
     "LMCO/bitfiles/firesim/chisel_p1/sim/switch0": {
+        "perm": 33261,
         "sha256": "51315cf9e09db15e492545dd34dbfcf66d78f35ebe75982c366e20c52b077f2f",
         "size": 355072
     },
     "LMCO/bitfiles/firesim/chisel_p2/agfi_id.json": {
+        "perm": 33188,
         "sha256": "cbde73ecabc70105ed8a02e5968c4305457248496d0f0b3590021e7e8dc88c04",
         "size": 129
     },
     "LMCO/bitfiles/firesim/chisel_p2/kmods/nbd.ko": {
+        "perm": 33188,
         "sha256": "2b82256cfe307e3c41e7166e255cc70ad1a25522beb1747ff24468054c2eb1ca",
         "size": 565760
     },
     "LMCO/bitfiles/firesim/chisel_p2/kmods/xdma.ko": {
+        "perm": 33188,
         "sha256": "e27520cb6d886f420409c6965e8d49f821084bdc0c3f91f833b3307d4c44ea8f",
         "size": 2190408
     },
     "LMCO/bitfiles/firesim/chisel_p2/sim/FireSim-f1": {
+        "perm": 33261,
         "sha256": "656a20a848f1bb2d6fdfde26b2c601ed90b3a84ed2390f345bf959696ff8737b",
         "size": 7125192
     },
     "LMCO/bitfiles/firesim/chisel_p2/sim/libdwarf.so.1": {
+        "perm": 33261,
         "sha256": "8bd530d772b26067ddfe94ab8117da498690e1dde58a50b5aa3283879220681d",
         "size": 1205768
     },
     "LMCO/bitfiles/firesim/chisel_p2/sim/libelf.so.1": {
+        "perm": 33261,
         "sha256": "be8fcd8474d3679d3c8bc1f37e7ed45b2f68dd633ea247d7b083f699e10bf50e",
         "size": 1071416
     },
     "LMCO/bitfiles/firesim/chisel_p2/sim/switch0": {
+        "perm": 33261,
         "sha256": "3c7af997774df4f46086b887fd0d3c8c263cb1259b0f0395afb2b2f1073a2dc9",
         "size": 355080
     },
     "LMCO/bitfiles/vcu118/README.md": {
+        "perm": 33188,
         "sha256": "240bfb34497cf3bc60e03dd3ffae944a203a5ab1202f3ecbef5a9d034acde8fe",
         "size": 81
     },
     "LMCO/bitfiles/vcu118/soc_chisel_p2-combo-015-017-100-101-103.bit": {
+        "perm": 33188,
         "sha256": "9e09737337ac71452b1084001987258e294d2fe412795846342767e8361f7176",
         "size": 37904967
     },
     "LMCO/bitfiles/vcu118/soc_chisel_p2-combo-015-017-100-101-103.ltx": {
+        "perm": 33188,
         "sha256": "33519ed023413e6602d110d208744853f242c4bfa14b3c816a9a9f21127a3342",
         "size": 59284
     },
     "LMCO/bitfiles/vcu118/soc_chisel_p2-combo-100.bit": {
+        "perm": 33188,
         "sha256": "8dc8646af9457b35d1ae3bbe00fc82fe2145f097fd03084b34a617761c24d5e9",
         "size": 42578487
     },
     "LMCO/bitfiles/vcu118/soc_chisel_p2-combo-100.ltx": {
+        "perm": 33188,
         "sha256": "33519ed023413e6602d110d208744853f242c4bfa14b3c816a9a9f21127a3342",
         "size": 59284
     },
     "LMCO/osImages/README.md": {
+        "perm": 33188,
         "sha256": "fc461991cd5dac162f96c41f0dbc810fb330ff59c3049fbbbac65449fe6699d6",
         "size": 12
     },
     "LMCO/osImages/firesim/FreeRTOS.elf": {
+        "perm": 33261,
         "sha256": "1bf112362134a8e689c93f172b473230cb627f477ad4b692ca915bd336091102",
         "size": 2110968
     },
     "LMCO/osImages/firesim/README.md": {
+        "perm": 33188,
         "sha256": "d8f26fcc728a703ba9a5c5ce78cd8b7a598859381b31f32c11aa76eb8f1c6988",
         "size": 236
     },
     "LMCO/osImages/qemu/README.md": {
+        "perm": 33188,
         "sha256": "713862e19fc844d10ed2e3b38cfc1f574906c4520454d15760d3c98e30c1aaa9",
         "size": 224
     },
     "LMCO/osImages/vcu118/README.md": {
+        "perm": 33188,
         "sha256": "58b561e39e59384aba8513a159931f78ae17e6dfbcceb9e77e3684d1ca1e10ed",
         "size": 361
     },
     "LMCO/osImages/vcu118/debian.elf": {
+        "perm": 33188,
         "sha256": "6539b20dff15d29337ff9916b26e1f80e077513c099b01a3ac78c2e018d79e1b",
         "size": 53004880
     },
     "LMCO/osImages/vcu118/debian_noRsyslog.elf": {
+        "perm": 33188,
         "sha256": "4124c4c8dc26f95386dffaeecc67af779b8a645dc0128929c3cd0337ee9908fd",
         "size": 52480592
     },
     "Michigan/appsBinaries/README.md": {
+        "perm": 33188,
         "sha256": "c95aabeb0b759c6f7cf35c51b2649ab18745e28ebb70f1c0ce18462f46b06342",
         "size": 32
     },
     "Michigan/bitfiles/README.md": {
+        "perm": 33188,
         "sha256": "1deee0647da55fe61a5592afce1a0eb8e5441480848838fbc7d83c8d0bb2465b",
         "size": 11
     },
     "Michigan/bitfiles/firesim/chisel_p1/agfi_id.json": {
+        "perm": 33188,
         "sha256": "d20bbb28cceb809d1acc8b8b48bb3c33fbefc94d3fa62b731ff35bdf9aba9921",
         "size": 129
     },
     "Michigan/bitfiles/firesim/chisel_p1/kmods/nbd.ko": {
+        "perm": 33188,
         "sha256": "2b82256cfe307e3c41e7166e255cc70ad1a25522beb1747ff24468054c2eb1ca",
         "size": 565760
     },
     "Michigan/bitfiles/firesim/chisel_p1/kmods/xdma.ko": {
+        "perm": 33188,
         "sha256": "e27520cb6d886f420409c6965e8d49f821084bdc0c3f91f833b3307d4c44ea8f",
         "size": 2190408
     },
     "Michigan/bitfiles/firesim/chisel_p1/sim/FireSim-f1": {
+        "perm": 33261,
         "sha256": "aa7c2f31fbf03dd9a1c4695df9a16fd9365b01d02d7353d6a6ec23a7ea8ffdf0",
         "size": 7125192
     },
     "Michigan/bitfiles/firesim/chisel_p1/sim/libdwarf.so.1": {
+        "perm": 33261,
         "sha256": "8bd530d772b26067ddfe94ab8117da498690e1dde58a50b5aa3283879220681d",
         "size": 1205768
     },
     "Michigan/bitfiles/firesim/chisel_p1/sim/libelf.so.1": {
+        "perm": 33261,
         "sha256": "be8fcd8474d3679d3c8bc1f37e7ed45b2f68dd633ea247d7b083f699e10bf50e",
         "size": 1071416
     },
     "Michigan/bitfiles/firesim/chisel_p1/sim/switch0": {
+        "perm": 33261,
         "sha256": "51315cf9e09db15e492545dd34dbfcf66d78f35ebe75982c366e20c52b077f2f",
         "size": 355072
     },
     "Michigan/bitfiles/vcu118/README.md": {
+        "perm": 33188,
         "sha256": "741ced27631f6a82166a0bb431febe92aa61b310a352f23201713530c0a5e9ff",
         "size": 22
     },
     "Michigan/osImages/README.md": {
+        "perm": 33188,
         "sha256": "fc461991cd5dac162f96c41f0dbc810fb330ff59c3049fbbbac65449fe6699d6",
         "size": 12
     },
     "Michigan/osImages/firesim/FreeRTOS.elf": {
+        "perm": 33261,
         "sha256": "8f631ba63d5e207fc643e3b626405a657ede677c077416d15d10fc5f4c1bb839",
         "size": 20207000
     },
     "Michigan/osImages/firesim/README.md": {
+        "perm": 33188,
         "sha256": "7eb7971860505d04aee2e732826effced68f0dd7eb821c69323877e87cc676d0",
         "size": 20
     },
     "Michigan/osImages/qemu/README.md": {
+        "perm": 33188,
         "sha256": "aaae416de34307c4dc5d8e3c1dcbc7e81acc0c80125857eae789faa466924ff0",
         "size": 17
     },
     "Michigan/osImages/vcu118/README.md": {
+        "perm": 33188,
         "sha256": "f1597b7c40f7efc4baf2f9b4cfb8987cadd702ec000f0db5a8bf0426cbd14273",
         "size": 23
     }
