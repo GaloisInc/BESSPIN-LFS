@@ -1,0 +1,403 @@
+Repository,Type,#,User,Body,Title,State,Created,Updated,Merged,URL
+GaloisInc/BESSPIN-LFS,PR,152,rtadros125,"- Add LMCO VCU118 binaries.
+- Add LMCO variants.
+- Make LMCO and Michigan binaries private (re-write history) + add the artifactory pseudo-git shenanigans.
+- Apply Apache license.
+- Fill the empty docs to prepare for open-sourcing as instructed by the DISTAR review.",Release Merge besspin-v1.0 05/18,closed,05/18/21 09:22:20,05/18/21 09:22:31,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/152
+GaloisInc/BESSPIN-LFS,PR,151,rtadros125,"- Add LMCO VCU118 binaries.
+- Add LMCO variants.
+- Make LMCO and Michigan binaries private (re-write history) + add the artifactory pseudo-git shenanigans.
+- Apply Apache license.
+- Fill the empty docs to prepare for open-sourcing as instructed by the DISTAR review.",Release Merge besspin-v1.0 05/18,closed,05/18/21 09:16:32,05/18/21 09:22:42,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/151
+GaloisInc/BESSPIN-LFS,PR,150,rtadros125,Related to GaloisInc/BESSPIN-Tool-Suite#1154,Add more docs,closed,05/18/21 09:12:46,05/18/21 09:12:54,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/150
+GaloisInc/BESSPIN-LFS,PR,149,rtadros125,"",apply Apache license,closed,04/30/21 10:23:32,04/30/21 10:23:38,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/149
+GaloisInc/BESSPIN-LFS,PR,148,rtadros125,"Related to GaloisInc/BESSPIN-Tool-Suite/issues/1127
+
+- fix silly typo + distinguish in logging between changed and unchanged
+- Add permissions to the info
+- fix executables",Make it all work,closed,04/22/21 13:17:54,04/22/21 15:34:49,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/148
+GaloisInc/BESSPIN-LFS,PR,147,rtadros125,Fix the gitignores + download that automatically overwrites if the hashes differ.,Fix gitignores + smarter download that updates,closed,04/22/21 07:23:29,04/22/21 09:54:33,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/147
+GaloisInc/BESSPIN-LFS,PR,146,rtadros125,"Closes GaloisInc/BESSPIN-Tool-Suite/issues/1126
+
+- Purge history
+- Utility to add/update/remove/download/upload the private files to/from artifactory
+- The utility adds gitignores too",Private lmco and michigan,closed,04/20/21 15:38:32,04/20/21 15:47:33,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/146
+GaloisInc/BESSPIN-LFS,PR,145,rtadros125,Related to DARPA-SSITH-Demonstrators/SSITH-FETT-Target#1106; a FETT-Target PR will follow with a modification to cyberphys configs.,LMCO: Add two debian images; with and without rsyslog,closed,04/06/21 10:57:08,04/06/21 11:57:00,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/145
+GaloisInc/BESSPIN-LFS,PR,144,rtadros125,Implement DARPA-SSITH-Demonstrators/SSITH-FETT-Target#1088,Update LMCO vcu118 bistreams with variants,closed,03/31/21 16:21:57,04/01/21 11:29:57,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/144
+GaloisInc/BESSPIN-LFS,PR,143,podhrmic,"",Add LMCO binaries,closed,03/29/21 15:12:56,03/30/21 13:21:29,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/143
+GaloisInc/BESSPIN-LFS,PR,142,rtadros125,Related to DARPA-SSITH-Demonstrators/SSITH-FETT-Target#1045,Binaries PR -- Rename fett to besspin,closed,03/29/21 11:37:43,03/29/21 11:42:38,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/142
+GaloisInc/BESSPIN-LFS,PR,141,rtadros125,"- Infotainment binaries updates
+- Add all VCU118 bitstreams from Nix
+- Add a bbl for Cheri qemu",Release Merge 4.2 03/12,closed,03/12/21 16:12:48,03/12/21 16:14:22,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/141
+GaloisInc/BESSPIN-LFS,PR,140,brooksdavis,This is a raw file be loaded with Qemu's -bios option.,Add a BBL for CHERI qemu.,closed,02/17/21 13:39:58,02/17/21 16:33:47,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/140
+GaloisInc/BESSPIN-LFS,PR,139,rtadros125,Closes #138 ,Add all vcu118 bitstreams from nix,closed,02/15/21 08:56:20,02/15/21 09:09:29,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/139
+GaloisInc/BESSPIN-LFS,Issue,138,njshanahan,I noticed there is no baseline P3 bitstream for the VCU118. Is there a plan to add one? Thanks!,VCU118 P3 Bitstream,closed,02/15/21 08:43:55,02/15/21 09:09:37,N/A,https://github.com/GaloisInc/BESSPIN-LFS/issues/138
+GaloisInc/BESSPIN-LFS,PR,137,dmzimmerman,This updates the infotainment server binaries to correctly deal with byte alignment of floats and network byte order for floats.,Updated infotainment binaries for byte ordering/alignment/portability,closed,02/12/21 09:44:34,02/22/21 10:53:26,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/137
+GaloisInc/BESSPIN-LFS,PR,136,podhrmic,"",Infotainment server binaries that respond to heartbeats.,closed,02/11/21 10:24:56,02/11/21 10:30:34,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/136
+GaloisInc/BESSPIN-LFS,PR,135,podhrmic,Reverts DARPA-SSITH-Demonstrators/SSITH-FETT-Binaries#134,"Revert ""Infotainment Server Heartbeats""",closed,02/11/21 09:34:34,02/11/21 09:37:43,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/135
+GaloisInc/BESSPIN-LFS,PR,134,dmzimmerman,"The infotainment server binaries in this branch respond to CAN heartbeat messages, as defined in DARPA-SSITH-Demonstrators/SSITH-FETT-Target#982.",Infotainment Server Heartbeats,closed,02/10/21 16:17:04,02/11/21 10:30:34,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/134
+GaloisInc/BESSPIN-LFS,PR,133,rtadros125,"- Infotainment server binaries
+- Cleaning git attributes
+- Update debian and freebsd images from nix",Merge for release 4.1,closed,02/08/21 14:41:56,02/08/21 14:44:05,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/133
+GaloisInc/BESSPIN-LFS,PR,132,dmzimmerman,Binaries that include the memory leak fix in DARPA-SSITH-Demonstrators/SSITH-FETT-Target#969.,Infotainment Server Memory Leak Fix,closed,02/06/21 23:33:18,02/07/21 20:10:57,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/132
+GaloisInc/BESSPIN-LFS,PR,131,rtadros125,Update os images pre-release,update debian and freebsd images from nix,closed,02/05/21 12:06:40,02/05/21 12:07:35,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/131
+GaloisInc/BESSPIN-LFS,PR,130,rtadros125,Closes DARPA-SSITH-Demonstrators/SSITH-FETT-Target#942,Cleaning git attributes,closed,02/01/21 14:30:29,02/03/21 16:08:29,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/130
+GaloisInc/BESSPIN-LFS,PR,129,dmzimmerman,"Binaries for the cyberphys infotainment server for GFE P2. These should also be fine for HARD or CHERI P2 (with the Debian one running on HARD and the FreeBSD one running on CHERI), because they don't actually need to be protected (as they are not hack targets in the cyberphysical demonstrator).",Infotainment server binaries,closed,01/22/21 14:09:46,01/22/21 15:24:02,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/129
+GaloisInc/BESSPIN-LFS,PR,128,rtadros125,"- Add `kgdb` to SRI-Cambridge images
+- Misc vulnerabilities and bugs fixes to MIT, SRI-Cambdridge, and LMCO binaries
+- Update the BSP names according to FETT Target updates
+- Change the FAT backend of FreeRTOS binaries
+- Add cyberphys binaries
+- update NIX images",Periodic Merge to Master,closed,12/15/20 14:59:50,12/15/20 15:03:21,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/128
+GaloisInc/BESSPIN-LFS,PR,127,rtadros125,"For DARPA-SSITH-Demonstrators/SSITH-FETT-Target#885
+
+In addition to periodic NIX updates.",Update images from NIX,closed,12/02/20 11:42:02,12/03/20 14:18:23,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/127
+GaloisInc/BESSPIN-LFS,PR,126,podhrmic,"Contains:
+* OTA update server
+  * GFE debian
+  * GFE FreeBSD
+* GDB for FreeBSD
+* SRI-Cambridge Bluespec P2 bitstream",Cyberphys binaries,closed,11/19/20 11:08:03,11/23/20 14:37:11,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/126
+GaloisInc/BESSPIN-LFS,PR,125,brooksdavis,"This change replaces /lib/libc.so.7 and /usr/lib/libc.a with versions
+patched with the fixes in https://github.com/CTSRD-CHERI/dlmalloc_nonreuse/pull/7.
+
+Static binaries (e.g. /rescue/*) are not updated and do contain the buggy
+realloc. We build our FETT-specific binaries dynamic so the are fixed by this update.",Fix bug in realloc extend-in-place support.,closed,09/24/20 14:00:42,09/24/20 16:18:14,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/125
+GaloisInc/BESSPIN-LFS,PR,124,rtadros125,"See DARPA-SSITH-Demonstrators/SSITH-FETT-Target#562 for more details.
+
+Based on SSITH-FETT-Target, `adjust-FAT-options-freertos` branch.",Update the FreeRTOS default vcu118 binary to use RamDisk instead of SD Card,closed,09/18/20 10:46:33,09/18/20 15:23:13,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/124
+GaloisInc/BESSPIN-LFS,PR,123,rtadros125,For DARPA-SSITH-Demonstrators/SSITH-FETT-Target#800,fpga->vcu118 aws->deleted,closed,09/14/20 14:10:28,09/14/20 14:14:47,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/123
+GaloisInc/BESSPIN-LFS,PR,122,rtadros125,Tested on both GFE and LMCO.,update firesim debian images to include the poweroff fix,closed,09/03/20 16:48:42,09/03/20 16:50:37,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/122
+GaloisInc/BESSPIN-LFS,PR,121,rtadros125,Details in DARPA-SSITH-Demonstrators/SSITH-FETT-Target#771,update the LMCO AFI following patch 1,closed,09/02/20 13:09:19,09/02/20 13:17:35,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/121
+GaloisInc/BESSPIN-LFS,PR,120,brooksdavis,"Fixes to 64-bit hybrid binaries in all executables.
+
+Potential initial temporal safety release.",CHERI temporal safety update 2020-08-27,closed,08/27/20 17:35:46,08/28/20 11:45:14,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/120
+GaloisInc/BESSPIN-LFS,PR,119,jameyhicks,"Looking at the output from systemd-analyze, 150 seconds was spent on
+tty-related systemd tasks. The default is 256 ttys.
+
+This commit adds a kernel command line parameter to reduce the number
+of ""legacy"" ttys to 32, which reduces boot time by about 90 seconds. I
+don't know if we even need 32, so maybe it could be reduced further.",Reduce number of ttys to reduce boot time,closed,08/27/20 07:53:24,08/28/20 13:09:31,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/119
+GaloisInc/BESSPIN-LFS,PR,118,jameyhicks,"…s on delete
+
+ * MIT security monitor mis-configuration that did not clear enclaves on delete
+ * Generated new AES key
+ * Generated new secrets for AES and PAM enclaves
+ * Verified that vulnerability was closed",Fix MIT security monitor mis-configuration that did not clear enclave…,closed,08/26/20 07:49:04,08/26/20 13:33:47,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/118
+GaloisInc/BESSPIN-LFS,PR,117,brooksdavis,"Background: Tags are stored in a two-level hierarchy to exploit
+non-uniform distribution of tags and reduce DRAM traffic, with the top
+level being a summary tag bit for a ""group"" of capabilities. On reset,
+just this top level is zeroed, with the leaves lazily zeroed.
+
+Bug: When a capability with the tag bit set was first stored to a given
+group, thereby flipping the top-level bit from 0 to 1, a numeric error
+led to only half of the leaf bits for the group being zeroed, meaning
+reading a capability from the upper half of the group would see the
+tag as whatever was already in DRAM. This error was introduced when
+adding support for 128-bit capabilities with a 64-bit bus, as used by
+CHERI on RV64, likely due to confusion about what the 8 on the line in
+question meant (it's a bits to bytes conversion, nothing to do with the
+capability size in bytes).
+
+Fix: Change the 16 back to an 8.
+
+Fixed by: @jrtc27",CHERI: Fix a tag cache bug that resulted in spurious tags.,closed,08/25/20 09:01:39,08/25/20 14:38:00,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/117
+GaloisInc/BESSPIN-LFS,PR,116,brooksdavis,"Alpha-quality temporal safety kernel and disk image plus associated agfi bump.
+
+The new FPGA image has been lightly tested with existing kernels and should be low risk (it simply adds a new instruction.)",Cheri temporal safety snapshot 2020-08-21,closed,08/21/20 11:57:15,08/24/20 08:52:06,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/116
+GaloisInc/BESSPIN-LFS,PR,115,jameyhicks," * Due to bug in build script, previous fix did not compile the patch that fixes vulnerability 1
+ * Patched code to fix vulnerability 2
+ * Fixed error in mailbox send and receive (memcpy address) that was reported by researcher
+ * New security monitor AES key
+ * Generated new secrets for PAM and AES enclaves
+ * Verified normal operation
+ * Verified vulnerability 1 is blocked
+ * Verified vulnerability 2 is blocked",Fix two vulnerabilities in MIT security monitor,closed,08/21/20 08:47:10,10/12/20 11:45:48,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/115
+GaloisInc/BESSPIN-LFS,PR,114,lyellread,Reverts DARPA-SSITH-Demonstrators/SSITH-FETT-Binaries#113,"Revert ""CHERI: Add `kgdb` to SRI-Cambridge Images""",closed,08/20/20 08:55:24,08/20/20 09:55:16,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/114
+GaloisInc/BESSPIN-LFS,PR,113,lyellread,"",CHERI: Add `kgdb` to SRI-Cambridge Images,closed,08/20/20 08:52:28,10/12/20 11:45:47,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/113
+GaloisInc/BESSPIN-LFS,PR,112,brooksdavis,"",Add kgdb to CheriBSD disk images.,closed,08/19/20 17:26:08,08/20/20 09:55:22,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/112
+GaloisInc/BESSPIN-LFS,PR,111,lyellread,"",Merge to Master,closed,08/17/20 13:53:23,10/12/20 11:45:47,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/111
+GaloisInc/BESSPIN-LFS,PR,110,brooksdavis,"This should be installed as /usr/local/bin/kgdb to allow debugging the
+local kernel via /dev/mem.",Add a kgdb binary.,closed,08/14/20 17:03:45,08/19/20 10:23:19,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/110
+GaloisInc/BESSPIN-LFS,Issue,109,austinhroach,"https://client.synack.com/vulnerabilities/cobrabyss-1 suggests that the fix didn't effectively flow to the deployed instance, although the correct patch seems to have been applied here: https://github.com/mit-enclaves/ssith-mit-sanctum/commit/93392cff9280f31bacf87443f28163da579abe0d
+
+Can we figure out where the fix ended up?
+
+@jameyhicks ",MIT vulnerability fix: failure to flow to deployed instance?,closed,08/14/20 05:48:16,08/28/20 14:53:07,N/A,https://github.com/GaloisInc/BESSPIN-LFS/issues/109
+GaloisInc/BESSPIN-LFS,PR,108,jameyhicks,"When run as a non-root user, pam_enclave.so was segfaulting because it
+tried to open a log file for output in /root and it was not checking
+for errors.
+
+Also, /dev/security_monitor was not accessible by non-root users.
+
+This removes the debug log, which is not needed, from pam_enclave.so
+to avoid the first problem.
+
+The install-enclaves.sh script is updated to chmod
+/dev/security_monitor so it is accessible to all users.",MIT: non-root pam enclave permissions,closed,08/12/20 09:24:54,10/12/20 11:45:46,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/108
+GaloisInc/BESSPIN-LFS,PR,107,brooksdavis,"Pure-capability kernel with subobject bounds.  Contains two past
+vulnerabilities FreeBSD-SA-18:13.nfs and FreeBSD-SA-09:06.ktimer that
+are known to be exploitable on regular RISC-V and believed to be defeated
+by the use of CHERI C.",CHERI Release 2: pure-capability kernel,closed,08/06/20 17:57:15,08/07/20 09:31:05,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/107
+GaloisInc/BESSPIN-LFS,PR,106,jameyhicks,"Applies the suggested fix to check thread_id before launching an enclave.
+",Added thread-id check to MIT security monitor,closed,08/06/20 08:57:55,08/07/20 08:08:19,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/106
+GaloisInc/BESSPIN-LFS,PR,105,jameyhicks," * Researcher reported that they ran out of space unpacking a tar file
+ * debian.img was created with genext2fs, which seems to be sparing in the number of inodes it allocates
+ * Made new filesystem by using mkfs -t ext4 and copied in contents of previous debian.img
+ * Now now more than 60% of inodes are free:
+
+[nix-shell:~/SSITH-FETT-Target/SSITH-FETT-Binaries/MIT/osImages/connectal]$ df -ik root/
+Filesystem     Inodes IUsed IFree IUse% Mounted on
+/dev/loop0      48864 16954 31910   35% /home/centos/SSITH-FETT-Target/SSITH-FETT-Binaries/MIT/osImages/connectal/root
+
+[nix-shell:~/SSITH-FETT-Target/SSITH-FETT-Binaries/MIT/osImages/connectal]$ df -k root
+Filesystem     1K-blocks   Used Available Use% Mounted on
+/dev/loop0        752568 321228    376656  47% /home/centos/SSITH-FETT-Target/SSITH-FETT-Binaries/MIT/osImages/connectal/root
+
+Fixes #20",Increase number of inodes in MIT debian.img,closed,08/06/20 08:39:20,08/06/20 10:45:24,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/105
+GaloisInc/BESSPIN-LFS,PR,104,brooksdavis,"New features:
+ - Improved subobject bounds support
+ - flag_captured(9) kernel function to demonstrate arbitrary code execution
+ - Reintroduce a two local and one remote vulnerability to the kernel.",CHERI pure-capability kernel snapshot 2020-07-31,closed,07/31/20 12:01:10,07/31/20 14:35:09,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/104
+GaloisInc/BESSPIN-LFS,PR,103,jameyhicks,Because researchers could have decrypted the previous ones using the exposed aeskey.elf.,Generated new secrets for MIT enclaves,closed,07/29/20 15:18:24,07/29/20 16:30:52,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/103
+GaloisInc/BESSPIN-LFS,PR,102,brooksdavis,"Features include:
+ - Support for root images inside partition tables.
+ - Fixed a bug in the NFSv4 export code.
+
+Addresses issue blocking https://github.com/DARPA-SSITH-Demonstrators/SSITH-FETT-Target/issues/619",CHERI purecap kernel snapshot 2020-07-29.,closed,07/29/20 15:05:58,07/29/20 15:16:20,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/102
+GaloisInc/BESSPIN-LFS,PR,101,lyellread,Per [Target #547](https://github.com/DARPA-SSITH-Demonstrators/SSITH-FETT-Target/issues/547),Update FreeBSD Images to be Rebootable,closed,07/29/20 14:16:14,10/12/20 11:45:43,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/101
+GaloisInc/BESSPIN-LFS,PR,100,rtadros125,"",updating the binaries to have iceblk ISR notify fix,closed,07/28/20 10:07:57,07/28/20 15:25:22,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/100
+GaloisInc/BESSPIN-LFS,PR,99,jameyhicks,Replaces the key that was accidentally exposed on github in the encryption utility.,MIT: New security monitor key and encrypted enclave executables,closed,07/27/20 12:57:22,07/29/20 05:55:57,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/99
+GaloisInc/BESSPIN-LFS,PR,98,brooksdavis,"Changes:
+ - Recompiled with a new LLVM version roughly equal to the LLVM 11.0.0
+   branchpoint.  Required to allow us to build kernels without debugging
+   features for Release 2.
+ - BVRS bugfix when deleting a voter.
+ - Enable NFS and NFS v4 servers (for use in Release 2).
+ - Assorted fixes of bugs found while setting up the NFS servers.",CHERI snapshot 2020-07-23,closed,07/23/20 16:27:02,04/20/21 15:48:25,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/98
+GaloisInc/BESSPIN-LFS,PR,97,rod-chapman,"See Target PR#636
+
+This build of the LMCO/P1/FreeRTOS executable application binary increases stack sizes for all tasks, and includes the iceBlk filesystem instead of RAMDisk.
+
+Built with
+  target=aws, binarySource=LMCO, buildApps=yes
+from the ""fix_lmco_iceblk"" branch of the Target repo.
+",Update LMCO/P1/FreeRTOS binary to increase stack sizes and use IceBlk,closed,07/23/20 03:16:28,10/12/20 11:46:16,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/97
+GaloisInc/BESSPIN-LFS,PR,96,lyellread,[This File](MIT/bitfiles/connectal/bluespec_p2/sim/ssith_aws_fpga) was not tracked with git-lfs. Tracking it. I verified versions were the same for both files in #95.,Move MIT Binary to Git LFS,closed,07/21/20 18:16:39,07/21/20 19:30:27,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/96
+GaloisInc/BESSPIN-LFS,PR,95,jameyhicks," * Responds to stray I/O with AXI decode error
+ * Fixed DMA memory filter to protect enclave memory
+ * Changes I/O addresses back to 32-bits, matching the main branch (GFE and CHERI)
+ * Copied public AGFI to us-east-1, us-east-2, and us-west-2",Updated MIT AGFI and simulator,closed,07/20/20 14:50:35,10/12/20 11:45:41,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/95
+GaloisInc/BESSPIN-LFS,PR,94,rtadros125,Use the right LMCO flags this time + RAMdisk as mentioned in DARPA-SSITH-Demonstrators/SSITH-FETT-Target#614,Use ramdisk for lmco,closed,07/20/20 12:18:42,07/20/20 12:23:21,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/94
+GaloisInc/BESSPIN-LFS,PR,93,rod-chapman,"Reverts previous PR#91 so that the LMCO FreeRTOS.elf is actually a symlink to the working GFE FreeRTOS.elf
+",Revert lmco freertos,closed,07/17/20 13:29:32,10/12/20 11:46:15,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/93
+GaloisInc/BESSPIN-LFS,PR,92,brooksdavis,"These kernels are intended for use with existing BBL and disk images
+and are intended to be used to prototype a new instance type.",Add pure-capability kernels for QEMU and AWS.,closed,07/17/20 12:53:55,07/29/20 10:02:49,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/92
+GaloisInc/BESSPIN-LFS,PR,91,rod-chapman,"Plan:
+1. rebuild GFE/P1/FreeRTOS binary on both local Linux host and on AWS F1 instance, and check for binary equivalence.
+2. Commit and push here on branch.
+3. When merged here, update Submodule ref in Target repo.
+",Update GFE/P1/FreeRTOS binary to re-adopt IceBlk Filesystem.,closed,07/17/20 03:57:05,10/12/20 11:46:15,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/91
+GaloisInc/BESSPIN-LFS,PR,90,lyellread,Reverting AGFI version to hotfix Target Master,Hotfixing issue with MIT agfi version,closed,07/13/20 21:32:36,07/13/20 21:36:15,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/90
+GaloisInc/BESSPIN-LFS,PR,89,lolsborn,"",fresh build of voting binaries,closed,07/13/20 11:25:09,07/13/20 16:04:48,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/89
+GaloisInc/BESSPIN-LFS,PR,88,lolsborn,"",updates voting binaries,closed,07/13/20 09:43:40,07/13/20 11:26:07,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/88
+GaloisInc/BESSPIN-LFS,PR,87,brooksdavis,"- Improved exception handling and correctness in CPU and kernel
+- Fix register reset state (set GPRs to NULL)
+- Kernel crashdump support
+- Update bvrs
+
+Supersedes #85",Cheri snapshot 2020-07-13,closed,07/13/20 09:39:37,07/13/20 16:12:23,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/87
+GaloisInc/BESSPIN-LFS,PR,86,dmzimmerman,Updates to voting binaries to match go-live updates on SSITH-FETT-Target.,Voting Binaries Updates,closed,07/13/20 09:04:27,07/13/20 09:45:16,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/86
+GaloisInc/BESSPIN-LFS,PR,85,brooksdavis,Improved exception handling and correctness plus kernel crashdump support.,Cheri snapshot 20200712,closed,07/12/20 16:55:47,07/13/20 09:40:24,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/85
+GaloisInc/BESSPIN-LFS,PR,84,dmzimmerman,"This updates the GFE FreeRTOS binaries with the icenet driver fix for the ""dying of loneliness"" issue.",Updated GFE binaries with fixed icenet drivers.,closed,07/11/20 22:17:51,07/13/20 16:05:08,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/84
+GaloisInc/BESSPIN-LFS,PR,83,jameyhicks," * Copied to us-east-1, us-east-2, and us-west-2
+ * Public access
+ * Fixes a few hardware bugs, including filter preventing DMA access to enclave regions",Updated MIT to agfi-0274a4cb21cd0e12d,closed,07/10/20 15:07:53,07/13/20 09:10:13,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/83
+GaloisInc/BESSPIN-LFS,PR,82,brooksdavis,"Changes:
+ - Userspace improvements and bugfixes to support Update 1.
+ - Install a favicon.ico in the bvrs webserver to reduce log clutter.",New CHERI snapshot.,closed,07/10/20 09:18:02,07/10/20 12:01:32,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/82
+GaloisInc/BESSPIN-LFS,PR,81,rtadros125,"",update the elfs after rebuilding to include stack/task increase + tftp error handling,closed,07/09/20 07:44:52,07/09/20 07:52:55,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/81
+GaloisInc/BESSPIN-LFS,PR,80,rtadros125,"",update michigan freertos elf,closed,07/09/20 07:31:03,07/09/20 07:36:39,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/80
+GaloisInc/BESSPIN-LFS,PR,79,brooksdavis,"Changes:
+  - Remove a URL linking to a Camrbridge FETT website.
+  - Voting system updates
+  - Spell /root/bvrs-official-password with the traditional number of i's",CHERI snapshot 2020-07-08,closed,07/08/20 08:46:54,07/08/20 09:57:14,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/79
+GaloisInc/BESSPIN-LFS,PR,78,brooksdavis,"Changes:
+  - Remove a URL linking to a Camrbridge FETT website.
+  - Remove a visible TODO in the voting system.
+
+**No rush to merge this update unless Synack wants it ASAP.** If not it's probably best to drop it in favor of something with a full bvrs update and let git-gc remove the files eventually.",CHERI snapshot 2020-07-07,closed,07/07/20 10:25:52,07/08/20 08:47:25,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/78
+GaloisInc/BESSPIN-LFS,PR,77,EthanJamesLew,"**Summary**
+* add devicetree.dtb and agfi_id.json ",GFE Bluespec P2 Binaries,closed,07/07/20 07:53:27,07/07/20 11:54:56,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/77
+GaloisInc/BESSPIN-LFS,PR,76,dmzimmerman,"Voting binaries with the fixes from PR #86 of SSITH-FETT-Voting. Requires updates to the static resources in SSITH-FETT-Target, PR#553.",Voting Binaries for SSITH-FETT-Voting #86,closed,07/06/20 22:13:33,07/07/20 11:16:56,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/76
+GaloisInc/BESSPIN-LFS,PR,75,rtadros125,"",add the FReeRTOS.elf build with ramdisk + tftp fix,closed,07/06/20 18:48:17,07/06/20 18:57:53,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/75
+GaloisInc/BESSPIN-LFS,PR,74,immindich,New images from DARPA-SSITH-Demonstrators/SSITH-FETT-Environment#31.,Add Debian images with extra packages installed,closed,07/06/20 14:40:14,07/06/20 14:51:56,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/74
+GaloisInc/BESSPIN-LFS,PR,73,brooksdavis,"Changes:
+ - Separate certs for bvrs server.
+ - Fix a remarkably long-standing bug preventing vi from working as a
+   non-root user (among other things).
+ - Improvements to motd.
+ - Build on the right branch so the hashes in kernel boot are on in
+   easily accessible history.",New CHERI snapshot.,closed,07/02/20 15:25:13,07/02/20 18:42:20,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/73
+GaloisInc/BESSPIN-LFS,PR,72,rtadros125,Answers #67 ,update the connectal bin + kmods,closed,07/02/20 07:47:28,07/02/20 07:56:11,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/72
+GaloisInc/BESSPIN-LFS,PR,71,immindich,See DARPA-SSITH-Demonstrators/SSITH-FETT-Environment#30.,Update GFE Debian images on FireSim,closed,07/01/20 14:01:36,07/01/20 15:34:46,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/71
+GaloisInc/BESSPIN-LFS,PR,70,brooksdavis,"Changes:
+ - chased updates to the bvrs config
+ - added custom mime-types
+ - install `localhost` SSL cert/key pair in place of the old self-signed
+   ones.
+ - kernels now support user (root) initiated reboot when used in
+   conjunction with updated ssith_aws_fpga and Connectal drivers (#67)
+   or under qemu.",New CHERI snapshot,closed,07/01/20 13:51:25,07/02/20 07:46:35,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/70
+GaloisInc/BESSPIN-LFS,PR,69,jameyhicks," * gdbserver package not available
+ * buildroot notes that gdbserver does not build for riscv
+ * still investigating gdbserver -- not supported by gdb on riscv",Added gdb to MIT/osImages/connectal/debian.img,closed,07/01/20 08:17:53,07/02/20 07:46:15,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/69
+GaloisInc/BESSPIN-LFS,PR,68,brooksdavis,"Changes:
+ - chased updates to the bvrs config
+ - added custom mime-types
+ - kernels now support user (root) initiated reboot when used in
+   conjunction with updated ssith_aws_fpga and Connectal drivers",New CHERI snapshot,closed,06/30/20 16:51:14,07/01/20 12:15:34,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/68
+GaloisInc/BESSPIN-LFS,Issue,67,jrtc27,"I have updated ssith-aws-fpga with reboot support and we would like to provide it to researchers. Moreover, I have also updated the XDMA driver to include some bug fixes landed upstream by Xilinx within the past 24h, one of which could result in the DMA engine being given an illegal operation (specifically being asked to process a list of descriptors that crosses a page boundary) that manifests as an I/O error to the host software; whilst I have never seen this occur in normal operation, as soon as I started trying to reboot (which means another large DMA burst to load ELF files) I'd hit it almost immediately, and I imagine it's possible to hit even without the strenuous act of rebooting and re-loading ELF files, if unlikely. Please rebuild the software for the CentOS AMI in a clean environment (the drivers' Makefiles don't capture all the dependencies and so report being up-to-date even when some files have changed), as even without the reboot issue I don't want to be running drivers that are known to have bugs.",Update ssith_aws_fpga + kernel modules,closed,06/30/20 15:42:56,07/02/20 08:02:02,N/A,https://github.com/GaloisInc/BESSPIN-LFS/issues/67
+GaloisInc/BESSPIN-LFS,PR,66,rtadros125,"",Rebuild the elf binaries for FreeRTOS,closed,06/30/20 08:56:06,06/30/20 09:09:14,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/66
+GaloisInc/BESSPIN-LFS,PR,65,brooksdavis,"Changes:
+ - Pure-capability bash installed
+ - Install manpages in image (including a new flag_captured(2))
+ - Incease image size to 10GiB so there's plenty of space for logs,
+   researcher tools, and extra programs such as webkit.
+ - New FETT specific /etc/motd.",Updated CHERI snapshot.,closed,06/29/20 16:50:12,10/12/20 11:45:38,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/65
+GaloisInc/BESSPIN-LFS,PR,64,jameyhicks,"",Mit more free space,closed,06/29/20 12:29:05,06/29/20 13:48:25,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/64
+GaloisInc/BESSPIN-LFS,PR,63,rtadros125,"",re update the binaries from nix,closed,06/29/20 10:56:30,06/29/20 10:57:37,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/63
+GaloisInc/BESSPIN-LFS,PR,62,podhrmic,Fixes https://github.com/DARPA-SSITH-Demonstrators/BESSPIN-CloudGFE/issues/93,Update with no-checksum offloading Icenet driver,closed,06/29/20 09:42:55,06/29/20 10:06:00,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/62
+GaloisInc/BESSPIN-LFS,PR,61,brooksdavis,"Changes:
+ - Move bvrs back to http://target/bvrs/ from http://target/ and place
+   a redirect at http://target/.
+ - Spell out the default logging configuration in nginx and add a comment
+   to programatically replace to add more.",New CheriBSD filesystem snapshot.,closed,06/27/20 12:41:31,06/27/20 14:44:58,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/61
+GaloisInc/BESSPIN-LFS,PR,60,brooksdavis,"Changes:
+ - Relocate bvrs to http://target/ from http://target/bvrs/.  This brings
+   over the changes in https://github.com/DARPA-SSITH-Demonstrators/SSITH-FETT-Target/pull/490
+ - Set precise bounds on allocations from the internal malloc in SQlite,
+   the pool allocator in nginx, and the mm_malloc shared memory allocator.",Fresh snapshot of CheriBSD image.,closed,06/26/20 15:42:24,06/26/20 16:02:47,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/60
+GaloisInc/BESSPIN-LFS,PR,59,rtadros125,"",Cambridge back to centos -- single AMI,closed,06/26/20 14:46:05,06/26/20 15:38:28,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/59
+GaloisInc/BESSPIN-LFS,PR,58,dhand-galois,Updates AGFI to latest build from 6/25. See https://gitlab-ext.galois.com/ssith/ta1-lmco/-/issues/13,Update LMCO P2 AFI to Enhanced Version 3,closed,06/26/20 01:55:26,04/20/21 15:48:26,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/58
+GaloisInc/BESSPIN-LFS,PR,57,dmzimmerman,"This contains functionally complete GFE voting binaries, including the poison cookie vulnerability.",New Voting Binaries (with vulnerability),closed,06/25/20 16:35:40,06/26/20 14:29:51,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/57
+GaloisInc/BESSPIN-LFS,PR,56,dmzimmerman,"Updated voting binaries that support all functionality, as well as having the ""poison cookie"" vulnerability.",Updated voting binaries (with vulnerability),closed,06/25/20 15:48:31,06/25/20 15:59:31,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/56
+GaloisInc/BESSPIN-LFS,PR,55,rtadros125,"",Ubuntu Cambridge,closed,06/25/20 08:57:21,06/25/20 09:24:07,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/55
+GaloisInc/BESSPIN-LFS,PR,54,jameyhicks," * Implemented sm_random() so enclaves can get random numbers
+ * Added more accounts to pam authentication enclave
+ * Use sm_random for nonce in AES encrypt",Update MIT enclaves,closed,06/25/20 08:50:06,06/25/20 11:59:02,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/54
+GaloisInc/BESSPIN-LFS,PR,53,rtadros125,"",update to the new pipeline that allows sqlite,closed,06/25/20 06:20:33,06/25/20 06:45:54,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/53
+GaloisInc/BESSPIN-LFS,PR,52,lyellread,Closes [Target #276](https://github.com/DARPA-SSITH-Demonstrators/SSITH-FETT-Target/issues/276),Adding FreeRTOS GFE images for fpga and firesim,closed,06/24/20 17:31:53,10/12/20 11:45:37,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/52
+GaloisInc/BESSPIN-LFS,PR,51,brooksdavis,"This commit allows ntpd to work.  It includes fixes in BBL, kernel
+exception handlers, libc, and a workaround in ntpd.
+
+Running this on F1 with connectall requires agfi-00e7c61d0026259cd (updated by #50)",New CHERI software snapshot.,closed,06/24/20 15:45:41,06/25/20 09:17:54,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/51
+GaloisInc/BESSPIN-LFS,PR,50,jrtc27,Implements the overlooked instructions required for casueword and casueword32 in the CheriBSD kernel. This means ntpd's umtx use no longer panics the kernel with an illegal instruction exception.,Update SRI-Cambridge AGFI,closed,06/24/20 13:48:07,06/24/20 14:28:57,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/50
+GaloisInc/BESSPIN-LFS,PR,49,EthanJamesLew,"**Summary**
+* built using pinned packages
+* change `devicetree.dtb` to another location in SRI-Cambridge",`ssith_aws_fpga` changes,closed,06/24/20 12:44:23,06/24/20 12:51:52,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/49
+GaloisInc/BESSPIN-LFS,PR,48,EthanJamesLew,"**Summary**
+* built using pinned packages
+* change `devicetree.dtb` to another location in SRI-Cambridge",`ssith_aws_fpga` changes,closed,06/24/20 12:25:49,06/26/20 12:27:38,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/48
+GaloisInc/BESSPIN-LFS,PR,47,jrtc27,"The first virtio_mmio entry erroneously stated its size as 0x100 bytes
+rather than 0x1000 bytes like the rest. Spotted by Nikhil.",Update SRI-Cambridge devicetree.dtb,closed,06/24/20 08:09:14,06/24/20 14:28:33,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/47
+GaloisInc/BESSPIN-LFS,PR,46,brooksdavis,"Features:
+ - Updated voting sytem.
+ - VM system improvements around page permissions
+ - Workaround for bug in native OpenSSL exposed by CHERI LLVM.
+ - Improved tests.",New CHERI kernel and OS image.,closed,06/23/20 16:57:34,06/23/20 17:07:12,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/46
+GaloisInc/BESSPIN-LFS,PR,45,EthanJamesLew,"**Summary**
+* update `ssith_aws_fpga` for CentOS 7 AMI
+* change `devicetree.dtb` path",Update Binaries for CheriBSD Integration,closed,06/23/20 14:08:26,06/23/20 14:51:03,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/45
+GaloisInc/BESSPIN-LFS,PR,44,dhand-galois,"Updates the AGFI for latest LMCO P2, delivered on June 23.",Update AGFI for LMCO P2,closed,06/23/20 10:08:46,04/20/21 15:48:26,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/44
+GaloisInc/BESSPIN-LFS,PR,43,brooksdavis,"Significant changes:
+ - Fix HTTP/2 Huffman encoder (by @jrtc27)
+ - Install favicon.ico (reducing error.log spam)",Update CheriBSD OS image.,closed,06/22/20 19:44:02,06/23/20 07:01:06,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/43
+GaloisInc/BESSPIN-LFS,PR,42,EthanJamesLew,"**Summary**
+
+* add `devicetree.dtb`
+* symlink `kmods` for connectal",Update `SRI-Cambridge` Binaries for FETT Target Integration,closed,06/22/20 15:17:17,06/22/20 15:58:29,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/42
+GaloisInc/BESSPIN-LFS,PR,41,jameyhicks,"- checked in centos .ko files
+- compiled ssith_aws_fpga for centos.",moved connectal driver source to SSITH-FETT-Target,closed,06/22/20 15:16:31,06/22/20 15:29:40,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/41
+GaloisInc/BESSPIN-LFS,PR,40,EthanJamesLew,"mistake: used wrong branch
+",WIP: Update `SRI-Cambridge` Binaries for FETT Target Integration,closed,06/22/20 15:15:20,06/22/20 15:17:03,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/40
+GaloisInc/BESSPIN-LFS,PR,39,rtadros125,Per the request of @taru-verma in #350,update the app binary 06/22,closed,06/22/20 08:03:46,06/22/20 08:06:28,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/39
+GaloisInc/BESSPIN-LFS,PR,38,brooksdavis,"Also bump the agfi to the required version.
+
+The software corresponds to the fett-20200622 tag in the associated
+CHERI repos.",CHERI OS image snapshot 20200622,closed,06/21/20 21:09:45,06/22/20 08:08:20,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/38
+GaloisInc/BESSPIN-LFS,PR,37,rtadros125,"",update the binaries to match the bucket on 0619,closed,06/19/20 16:07:22,06/19/20 16:09:13,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/37
+GaloisInc/BESSPIN-LFS,PR,36,rtadros125,"",Umich binaries,closed,06/19/20 15:02:02,06/26/20 12:27:40,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/36
+GaloisInc/BESSPIN-LFS,PR,35,jameyhicks," * Webserver smoketest was failing due to lack of curl
+ * added rsync and wget because they are also useful
+ * Fixed signature on MIT enclave and updated security monitor",Added curl and rsync to debian.img and updated MIT enclaves,closed,06/19/20 13:28:43,06/19/20 15:24:26,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/35
+GaloisInc/BESSPIN-LFS,PR,34,immindich,"This only affects Debian on FireSim, but the other images got updated due to kernel config changes.",Add FireSim images that use hardware RNG,closed,06/19/20 09:00:01,06/19/20 09:58:29,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/34
+GaloisInc/BESSPIN-LFS,PR,33,rtadros125,"",update firesim-F1 and switch0 to the working versions,closed,06/18/20 16:51:12,06/19/20 09:53:36,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/33
+GaloisInc/BESSPIN-LFS,PR,32,dhand-galois,"This updates the AGFIs and `FireSim-f1` binaries for the GFE Chisel P1 and P2 processors. These were built with the most recent version of FireSim, which includes a HW RNG and debugging support via gdb.
+
+See https://github.com/DARPA-SSITH-Demonstrators/BESSPIN-CloudGFE/issues/108 and https://github.com/DARPA-SSITH-Demonstrators/BESSPIN-CloudGFE/issues/109 for more information.",Update GFE Chisel P1 and P2,closed,06/18/20 01:21:41,04/20/21 15:48:25,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/32
+GaloisInc/BESSPIN-LFS,PR,31,rtadros125,"",add symlinks to the debian apps for MIT,closed,06/17/20 18:31:51,06/19/20 09:57:39,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/31
+GaloisInc/BESSPIN-LFS,PR,30,jameyhicks," * Found a hardware bug triggered by Debian, updated FPGA with fix
+ * Updated debian.img with net-tools so ifconfig will work",Updated MIT AGFI ID and added ifconfig to debian.img,closed,06/17/20 18:17:05,06/19/20 09:56:26,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/30
+GaloisInc/BESSPIN-LFS,PR,29,dhand-galois,"This updates the LMCO P1 AGFI to include their `mod010a` pipeline and the associated `FireSim-f1`.
+
+I've also updated their P2 AGFI and `FireSim-f1` to add debugger / RNG support from the latest version of FireSim, just to keep everything current. There's no change to the HARD pipeline compared to the previous version.",Update LMCO Bitfiles,closed,06/17/20 11:44:44,04/20/21 15:48:25,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/29
+GaloisInc/BESSPIN-LFS,PR,28,brooksdavis,"This includes a fixed nginx and a partially working voting system.
+
+Known issues:
+ - submit button doesn't seem to do anything when registering a voter
+   as an official. https://github.com/DARPA-SSITH-Demonstrators/SSITH-FETT-Voting/issues/67",Fresh CHERI OS image snapshot.,closed,06/16/20 16:32:57,06/19/20 09:58:41,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/28
+GaloisInc/BESSPIN-LFS,PR,27,jameyhicks,"MIT OS images, AGFI, and PAM authentication demo app",Jamey/connectal mit,closed,06/16/20 12:54:11,06/17/20 08:51:01,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/27
+GaloisInc/BESSPIN-LFS,PR,26,immindich,"The `kfcgi` binary was dynamically linked against zlib. Looking [build script](https://github.com/DARPA-SSITH-Demonstrators/SSITH-FETT-Voting/blob/dc1304af455db4cb39d6bfaf45adf79e455216fb/source/builddeps.sh#L101) in the voting repo, it seems like the intent was to use static linking, although the `pkg-config` line did not actually add the right flags for me. This PR replaces the `kfcgi` binaries with ones that are linked correctly, fixing the CI failure in DARPA-SSITH-Demonstrators/SSITH-FETT-Target#421.",KFCGI linking,closed,06/16/20 10:19:39,06/19/20 09:58:44,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/26
+GaloisInc/BESSPIN-LFS,PR,25,brooksdavis,"This snapshot contains a fully configured sshd and nginx config and
+and non-working voting system (currently blocked on an nginx crash).
+
+sshd and nginx (as well as kgcgi) start automatically at boot and the
+bvrs database is bootstrapped with a default user ""official"" who's password
+is stored in /root/bvrs-offical-password.",2020-06-15 snapshot of CheriBSD kernel and image.,closed,06/15/20 14:12:51,06/16/20 16:34:39,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/25
+GaloisInc/BESSPIN-LFS,PR,24,immindich,Adds new OS images from DARPA-SSITH-Demonstrators/SSITH-FETT-Environment#24,New OS images after debian/ssh changes,closed,06/15/20 11:16:55,06/19/20 09:58:45,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/24
+GaloisInc/BESSPIN-LFS,PR,23,austinharris,"",Michigan m3db app + new agfi,closed,06/13/20 13:39:01,06/16/20 17:41:35,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/23
+GaloisInc/BESSPIN-LFS,PR,22,dragansts,appBinaries -> appsBinaries,fixed typo,closed,06/12/20 12:07:22,06/19/20 09:58:47,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/22
+GaloisInc/BESSPIN-LFS,PR,21,dragansts,"",simlinks,closed,06/12/20 10:55:06,06/19/20 09:58:50,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/21
+GaloisInc/BESSPIN-LFS,PR,20,dragansts,"",Simlink cherry picked,closed,06/12/20 10:00:18,06/12/20 11:01:18,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/20
+GaloisInc/BESSPIN-LFS,PR,19,dragansts,"",Simlink gfe lmco,closed,06/12/20 09:06:31,06/12/20 11:00:16,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/19
+GaloisInc/BESSPIN-LFS,PR,18,dhand-galois,LMCO delivered new [source code](https://gitlab-ext.galois.com/ssith/ta1-lmco/-/issues/6). This updates FETT to point to the latest AGFI based on these changes.,Update to latest LMCO Chisel P2 AGFI,closed,06/11/20 23:19:06,04/20/21 15:48:25,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/18
+GaloisInc/BESSPIN-LFS,PR,17,dhand-galois,"This updates the GFE Chisel P1 and P2 firesim AGFIs and `FireSim-f1` binaries. It also adds the current LMCO AGFIs.
+
+Note that these new AFIs will use the native SiFive UART driver on Linux by default. If `debian.elf` has not already been updated to incorporate the changes described in https://github.com/DARPA-SSITH-Demonstrators/BESSPIN-CloudGFE/issues/99, then that should be added to this branch before committing.
+
+All new AFIs also have hardcoded baud rates (115200), so setting the SiFive UART baud rate is no longer required.",Update FireSim AFIs and Binaries,closed,06/10/20 18:56:47,04/20/21 15:48:25,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/17
+GaloisInc/BESSPIN-LFS,PR,16,rod-chapman,"In relation to CloudGFE #101
+
+This change needs to be merged in sync with matching changing in the SSITH-FETT-Target and FreeRTOS-10.0.1 repositories. Pleas lease with Ramy T re: timing this.
+
+
+",Select new chisel_p1 AGFI with 115200 baud UART,closed,06/10/20 15:25:29,10/12/20 11:46:10,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/16
+GaloisInc/BESSPIN-LFS,PR,15,austinharris,"This adds just an initial Michigan P1 AGFI. Binaries to come shortly.
+
+Can you please test you are able to access it?",Michigan P1 AGFI,closed,06/09/20 17:29:03,06/10/20 13:20:36,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/15
+GaloisInc/BESSPIN-LFS,PR,14,austinharris,"This adds just an initial Michigan P1 AGFI. Binaries to come shortly.
+
+Can you please test you are able to access it?",Michigan P1 AGFI,closed,06/09/20 17:27:53,06/10/20 13:20:36,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/14
+GaloisInc/BESSPIN-LFS,PR,13,jrtc27,Also fixes a typo in the existing GFE files I noticed when copying from them.,Add CHERI Connectal AGFI-ID,closed,06/09/20 09:35:16,06/09/20 09:51:01,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/13
+GaloisInc/BESSPIN-LFS,PR,12,rtadros125,"",Merge from develop for release,closed,06/08/20 07:18:11,06/08/20 10:57:08,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/12
+GaloisInc/BESSPIN-LFS,PR,11,brooksdavis,Allow another couple file types in LFS (and fix the *.elf one that didn't seem to match anything.),Add a set of CHERI kernels and a common bbl and disk image,closed,06/05/20 16:19:45,06/06/20 04:52:02,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/11
+GaloisInc/BESSPIN-LFS,PR,10,immindich,"This PR adds the new Debian image from the Nix store. I changed the BBL package, which means all the other images also got rebuilt. ",Debian FireSim image,closed,06/05/20 15:53:03,06/19/20 09:58:57,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/10
+GaloisInc/BESSPIN-LFS,PR,9,rtadros125,"",update GFE firesim chisel_p1 to the ones working with iceblk,closed,06/03/20 15:18:02,06/19/20 09:58:21,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/9
+GaloisInc/BESSPIN-LFS,PR,8,rtadros125,"",Add GFE Chisel P1 FireSim,closed,06/02/20 13:55:36,06/19/20 09:58:23,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/8
+GaloisInc/BESSPIN-LFS,PR,7,immindich,"This PR adds a script `update.py` which copies the latest bitstreams and OS images from the Nix store as described in DARPA-SSITH-Demonstrators/SSITH-FETT-Target#314. I have also added the binaries for running the Chisel P2 processor on FireSim.
+
+Things that still need to be done:
+- Document `update.py` and give it a better interface
+- Document directory structure for AWS bitfiles
+- Deal with AFIs and document that too
+- Copy FireSim OS images from Nix (depends on DARPA-SSITH-Demonstrators/SSITH-FETT-Target#291, could be a separate PR)",Script for updating binaries from Nix store,closed,06/01/20 14:22:34,06/01/20 17:21:28,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/7
+GaloisInc/BESSPIN-LFS,PR,6,immindich,This PR replaces the current FreeBSD application binaries with ones built using clang (DARPA-SSITH-Demonstrators/SSITH-FETT-Target#308). The NGINX binary should also be linked correctly now (DARPA-SSITH-Demonstrators/SSITH-FETT-Target#244).,Update FreeBSD binaries,closed,05/28/20 15:26:39,05/28/20 16:15:45,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/6
+GaloisInc/BESSPIN-LFS,PR,5,rtadros125,"",Adding the GFE OS binaries,closed,05/26/20 13:37:37,05/26/20 14:21:03,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/5
+GaloisInc/BESSPIN-LFS,PR,4,abakst,Add voting app binaries,Add voting app,closed,05/21/20 16:16:22,06/19/20 09:58:59,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/4
+GaloisInc/BESSPIN-LFS,PR,3,abakst,"",Add voting binaries,closed,05/21/20 15:18:41,05/21/20 16:10:07,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/3
+GaloisInc/BESSPIN-LFS,PR,2,rtadros125,"",Merge to master. Initial release.,closed,05/11/20 14:29:45,05/12/20 09:32:55,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/2
+GaloisInc/BESSPIN-LFS,PR,1,immindich,"This PR adds the unmodified application binaries we currently have, along with some incomplete documentation describing the directory structure. Some things I need to think about before merging:
+- I went with the second approach from DARPA-SSITH-Demonstrators/BESSPIN-CloudGFE#62, with a directory at the top level for each source of binaries. I can change this if people think that a different structure is better.
+- I'm not sure if it makes sense putting our own OS images in this repo, as they are already part of our Nix environment, which makes it very easy to make changes. The FETT tool could have a configurable option to search for images in the Nix environment if they are not present here.
+- Images and bitfiles should have some naming scheme which should be documented in the README. I think we would be fine using the conventions we currently have (processor type + GFE target for bitfiles, OS + device for images).",GFE Application binaries,closed,05/05/20 15:50:21,06/19/20 09:59:00,(use `-x pr` option),https://github.com/GaloisInc/BESSPIN-LFS/pull/1
