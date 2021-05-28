@@ -179,6 +179,26 @@
         "sha256": "93950d19a6cc2bd314d88863c4b5d9f903988a6345f1511dcfa30430946215e9",
         "size": 2178552
     },
+    "MIT/osImages/connectal/aeskey.elf": {
+        "perm": 33277,
+        "sha256": "f34fe083a608659e3d14cf060c027b3005e384d6af7e427f0f5f23b854d5e051",
+        "size": 920
+    },
+    "MIT/osImages/connectal/debian.elf": {
+        "perm": 33277,
+        "sha256": "21b3ce891f951ff1f6644018563fa846eb524bb9d02cf0ccc865b920628e25c1",
+        "size": 8884440
+    },
+    "MIT/osImages/connectal/debian.img": {
+        "perm": 33204,
+        "sha256": "21e0de05d0312413be7791069518e69c1a5219dc7b53da0db92cd62691a52ddd",
+        "size": 800000000
+    },
+    "MIT/osImages/connectal/devicetree.dtb": {
+        "perm": 33204,
+        "sha256": "fabefa8ab9f7137f191c60fb51af77894f22c95ee5092eb6942f4cfb3b29bd69",
+        "size": 2416
+    },
     "Michigan/appsBinaries/README.md": {
         "perm": 33188,
         "sha256": "c95aabeb0b759c6f7cf35c51b2649ab18745e28ebb70f1c0ce18462f46b06342",
