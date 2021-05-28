@@ -273,5 +273,35 @@
         "perm": 33188,
         "sha256": "f1597b7c40f7efc4baf2f9b4cfb8987cadd702ec000f0db5a8bf0426cbd14273",
         "size": 23
+    },
+    "SRI-Cambridge/bitfiles/connectal/bluespec_p2/agfi_id.json": {
+        "perm": 33188,
+        "sha256": "83d5d96d8039d4e129e0454bdf5c5676b2f4dd50629bdd19882f1ecdbb46c213",
+        "size": 129
+    },
+    "SRI-Cambridge/bitfiles/connectal/bluespec_p2/ubuntu18.04_k5.3.0-1028-aws.bkup/kmods/pcieportal.ko": {
+        "perm": 33204,
+        "sha256": "f1f3d67ab478cf4f4700934078bce3011b13361de49683c20bd9aab477af0cdd",
+        "size": 143472
+    },
+    "SRI-Cambridge/bitfiles/connectal/bluespec_p2/ubuntu18.04_k5.3.0-1028-aws.bkup/kmods/portalmem.ko": {
+        "perm": 33204,
+        "sha256": "bf974e1f426208c45053b4cee2ea73264d49f6214279e4af7bbc82ff363dceb7",
+        "size": 16120
+    },
+    "SRI-Cambridge/bitfiles/connectal/bluespec_p2/ubuntu18.04_k5.3.0-1028-aws.bkup/sim/ssith_aws_fpga": {
+        "perm": 33277,
+        "sha256": "6698c2bfb2d1b0265818252624f585b683f0344472e383d6949d27d1b5f02e46",
+        "size": 2162880
+    },
+    "SRI-Cambridge/bitfiles/vcu118/soc_bluespec_p2.bit": {
+        "perm": 33204,
+        "sha256": "5faeb1473b7d4078ad47602b70b37bbfa25d6f97202a18589491b6b87c672a28",
+        "size": 34328699
+    },
+    "SRI-Cambridge/bitfiles/vcu118/soc_bluespec_p2.ltx": {
+        "perm": 33204,
+        "sha256": "37fa1d805e3be8a69ffbb2d5efdfac530b408fc634037c364abfa29cfe953f71",
+        "size": 1024
     }
 }
