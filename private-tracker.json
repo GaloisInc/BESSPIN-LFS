@@ -169,6 +169,16 @@
         "sha256": "93dc05b18496b86c2fe1d2b9720479121d0155fb884bf19c384a8166da26c1c9",
         "size": 270
     },
+    "MIT/bitfiles/connectal/bluespec_p2/agfi_id.json": {
+        "perm": 33188,
+        "sha256": "e985fce454d3d1ca4d1ac6342db98790be9ac31cbbfc15889d62850760fefc28",
+        "size": 300
+    },
+    "MIT/bitfiles/connectal/bluespec_p2/sim/ssith_aws_fpga": {
+        "perm": 33277,
+        "sha256": "93950d19a6cc2bd314d88863c4b5d9f903988a6345f1511dcfa30430946215e9",
+        "size": 2178552
+    },
     "Michigan/appsBinaries/README.md": {
         "perm": 33188,
         "sha256": "c95aabeb0b759c6f7cf35c51b2649ab18745e28ebb70f1c0ce18462f46b06342",
