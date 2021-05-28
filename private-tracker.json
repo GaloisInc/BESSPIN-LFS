@@ -139,6 +139,36 @@
         "sha256": "4124c4c8dc26f95386dffaeecc67af779b8a645dc0128929c3cd0337ee9908fd",
         "size": 52480592
     },
+    "MIT/appsBinaries/enclaves/debian/enclaves/etc/pam.d/testing": {
+        "perm": 33204,
+        "sha256": "e8abb176eafa485139ed26c5735224983b0482a85661a9c44f7d7d436f8f913b",
+        "size": 400
+    },
+    "MIT/appsBinaries/enclaves/debian/enclaves/lib/riscv64-linux-gnu/security/pam_enclave.so": {
+        "perm": 33277,
+        "sha256": "ef3ad1d2e60120d88b16566a574e46fa0e093e0d94df0b7de457535f3dcdaebb",
+        "size": 23728
+    },
+    "MIT/appsBinaries/enclaves/debian/enclaves/ssith/aes-enclave.bin": {
+        "perm": 33204,
+        "sha256": "5d1b49196c0f3e676ca53e3166071b4f5f2c1f93593562423fe49bdc2d93f3e2",
+        "size": 102400
+    },
+    "MIT/appsBinaries/enclaves/debian/enclaves/ssith/aes-main": {
+        "perm": 33277,
+        "sha256": "fff69d9cd15d279cdd35d0693feb83acb607c990b7c4bd903fcc4178ab829c9f",
+        "size": 31240
+    },
+    "MIT/appsBinaries/enclaves/debian/enclaves/ssith/pam-enclave.bin": {
+        "perm": 33204,
+        "sha256": "356c01b5750a19a9350c5734f5e508d7221cd55c769ca011094252f5ff705406",
+        "size": 16384
+    },
+    "MIT/appsBinaries/enclaves/debian/install-enclaves.sh": {
+        "perm": 33277,
+        "sha256": "93dc05b18496b86c2fe1d2b9720479121d0155fb884bf19c384a8166da26c1c9",
+        "size": 270
+    },
     "Michigan/appsBinaries/README.md": {
         "perm": 33188,
         "sha256": "c95aabeb0b759c6f7cf35c51b2649ab18745e28ebb70f1c0ce18462f46b06342",
