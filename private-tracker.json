@@ -296,8 +296,8 @@
     },
     "SRI-Cambridge/bitfiles/vcu118/soc_bluespec_p2.bit": {
         "perm": 33204,
-        "sha256": "5faeb1473b7d4078ad47602b70b37bbfa25d6f97202a18589491b6b87c672a28",
-        "size": 34328699
+        "sha256": "739276d82a867683a50cbdd624fda38a18bbcc716cc656c505989b04ef81b701",
+        "size": 37783607
     },
     "SRI-Cambridge/bitfiles/vcu118/soc_bluespec_p2.ltx": {
         "perm": 33204,
